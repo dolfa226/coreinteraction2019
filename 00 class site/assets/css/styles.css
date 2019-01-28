@@ -1,0 +1,46 @@
+body {
+    font-family: "Lato";
+    font-size: 15px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 4px;
+    top: 20%;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.subtitles {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #0074D9;
+}
+
+.column {
+    display: inline-block;
+    color: #000;
+    margin: 100px;
+    height: 250px;
+    vertical-align: top;
+}
+
+.links {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+}
+
+a {
+    color: #000000;
+}
+
+a:hover {
+    color: #ffd199;
+}
