@@ -1,0 +1,30 @@
+body {
+    font-family: "Lato";
+    font-size: 15px;
+}
+
+
+img {
+    max-width: 500px;
+}      
+
+.imgs {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+.articles {
+    width: 500px;
+    top: 85%;
+    left: 15%;
+    position: absolute;
+
+
+}
