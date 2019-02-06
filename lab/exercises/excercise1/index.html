@@ -8,15 +8,78 @@
     <meta property="og:image" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="assets/css/styles.css" media="all" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Lato";
+        }
+        
+        .styles {
+            font-size: 30px;
+        }
+        .dotted {
+            border-style: dotted;
+            border-color: #5d77a3;
+            width: 300px;
+        }
+
+        .solid {
+            border-style: solid;
+            border-width: thick; 
+        }
+
+        .block {
+            border-style: dotted solid dotted solid;
+            border-width: thick;
+            border-color: #5ca291;
+        }
+
+        .inset {
+            border-style: inset;
+            border-color: #ce8d1c;
+            border-width: medium;
+        }
+
+        .thin {
+            border-style: dashed;
+            border-color: red;
+            border-width: thin;
+        }
+
+    </style>
 
   </head>
 
   <body>
-      <p>border</p>
 
-      <div class=
 
+      <div class="general">
+          <p>Border Properties</p>
+          <li> &lt;border-width: thin | medium | thick&gt; </p></li>
+          <li> &lt;border-style: dotted | dashed | solid | double | groove | none | hidden&gt; </p></li>
+          <li> &lt;border-color: color&gt; </p></li>
+      </div>
+
+      <div class="examples">
+          <a href="https://unsplash.com/"> <img src="assets/imgs/unsplash.png"> </a>
+          <a href="https://facebook.com/"> <img src="assets/imgs/facebook.png"> </a>
+          <a href="https://behance.net/"> <img src="assets/imgs/behance.png"> </a>
+          <a href="https://fonts.google.com/"> <img src="assets/imgs/google.png"> </a>
+          <a href="https://madewell.com/"> <img src="assets/imgs/madewell.png"> </a>
+
+      </div>
+
+      <div class="styles">
+        <p class="dotted">blue dotted border </p>
+        <p class="thin"> thin red dashed border </p>
+        <ol class="solid">solid black border </ol>
+        <blockquote class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio eu leo vulputate ultrices vel nec leo. Morbi massa risus, porttitor id venenatis quis, hendrerit a arcu. Donec eu faucibus libero, ut faucibus erat. Vivamus ante neque, posuere in eleifend at, rutrum quis erat. Nam iaculis elit leo, sit amet mattis metus rhoncus at. Sed nec quam odio. In efficitur enim et justo volutpat, eget molestie turpis semper.</blockquote>
+
+        <div class="inset"> <img src="assets/imgs/trees.jpg" width=200px >  </div>
+        
+
+      </div>
 
 
   </body>
