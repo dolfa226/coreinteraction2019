@@ -11,41 +11,83 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="assets/css/styles.css" media="all" rel="stylesheet" />
     <style>
+
         body {
             font-family: "Lato";
+            background-color: #f2f5f7;
+        }
+
+        
+        img {
+            width: 400px;
+        }
+
+        .borderproperties {
+            font-size: 20px;
+        }
+
+        .images {
+            position: absolute;
+            left: 57vw;
+            top: 40px;
+            font-size: 20px;
+        }
+
+        .general {
+            position: absolute;
+            top: 40px;
+            left: 10vw;
         }
         
         .styles {
-            font-size: 30px;
+            font-size: 20px;
+            position: absolute;
+            top: 300px;
+            left: 10vw;
         }
+
         .dotted {
             border-style: dotted;
             border-color: #5d77a3;
-            width: 300px;
+            width: 400px;
         }
 
         .solid {
             border-style: solid;
             border-width: thick; 
+            width: 400px;
+        }
+
+        .borderbottom {
+            border-bottom: 5px solid #9986a0;
+            width: 400px;
+
         }
 
         .block {
             border-style: dotted solid dotted solid;
             border-width: thick;
             border-color: #5ca291;
+            width: 400px;
         }
 
         .inset {
             border-style: inset;
             border-color: #ce8d1c;
             border-width: medium;
+            width: 400px;
         }
 
         .thin {
             border-style: dashed;
             border-color: red;
             border-width: thin;
+            width: 400px;
         }
+
+
+
+
 
     </style>
 
@@ -55,28 +97,32 @@
 
 
       <div class="general">
-          <p>Border Properties</p>
-          <li> &lt;border-width: thin | medium | thick&gt; </p></li>
-          <li> &lt;border-style: dotted | dashed | solid | double | groove | none | hidden&gt; </p></li>
-          <li> &lt;border-color: color&gt; </p></li>
+          <p class="borderproperties"><strong>Border Properties</strong>
+          <li> border-width: thin | medium | thick; </p></li>
+          <li> border-style: dotted | dashed | solid | double | groove | none | hidden; </p></li>
+          <li> border-color: color; </p></li>
       </div>
 
-      <div class="examples">
+      <div class="images">
+          <p><strong>Site Examples</strong></p>
           <a href="https://unsplash.com/"> <img src="assets/imgs/unsplash.png"> </a>
-          <a href="https://facebook.com/"> <img src="assets/imgs/facebook.png"> </a>
           <a href="https://behance.net/"> <img src="assets/imgs/behance.png"> </a>
+          <a href="https://google.com/"> <img src="assets/imgs/googlesearch.png"> </a>
           <a href="https://fonts.google.com/"> <img src="assets/imgs/google.png"> </a>
           <a href="https://madewell.com/"> <img src="assets/imgs/madewell.png"> </a>
+          <a href="https://facebook.com/"> <img src="assets/imgs/facebook.png"> </a>
 
       </div>
 
       <div class="styles">
+        <strong>Examples</strong>
         <p class="dotted">blue dotted border </p>
         <p class="thin"> thin red dashed border </p>
+        <p class="borderbottom"> border bottom </p>
         <ol class="solid">solid black border </ol>
         <blockquote class="block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed odio eu leo vulputate ultrices vel nec leo. Morbi massa risus, porttitor id venenatis quis, hendrerit a arcu. Donec eu faucibus libero, ut faucibus erat. Vivamus ante neque, posuere in eleifend at, rutrum quis erat. Nam iaculis elit leo, sit amet mattis metus rhoncus at. Sed nec quam odio. In efficitur enim et justo volutpat, eget molestie turpis semper.</blockquote>
 
-        <div class="inset"> <img src="assets/imgs/trees.jpg" width=200px >  </div>
+        <div class="inset"> <img src="assets/imgs/trees.jpg">  </div>
         
 
       </div>
