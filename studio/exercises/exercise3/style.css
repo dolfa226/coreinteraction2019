@@ -18,7 +18,7 @@ html, body{
     width: 2vw;
     height: 10vw;
     background-color: #0c2142;
-    left: 20vw;
+    left: 35vw;
     top: 19vw;
     transform: skew(-25deg);
 }
@@ -27,7 +27,7 @@ html, body{
     width: 2vw;
     height: 10vw;
     background-color: #0c2142;
-    left: 24vw;
+    left: 39vw;
     top: 19vw;
 }
 
@@ -35,7 +35,7 @@ html, body{
     width: 8vw;
     height: 1.5vw;
     background-color: #0c2142;
-    left: 22vw;
+    left: 37vw;
     top: 24.25vw;
     transform: skew(-20deg);
 }
@@ -46,14 +46,14 @@ html, body{
     background-color: #0c2142;
 
     top: 27.58vw;
-    left: 24vw;
+    left: 39vw;
 }
 
 #d1 {
     width: 2.7vw;
     height: 3.25vw;
     background-color: #0c2142;
-    left: 29.8vw;
+    left: 44.8vw;
     top: 24.25vw;
     transform: skew(50deg);
 }
@@ -63,7 +63,7 @@ html, body{
     width: 2.7vw;
     height: 3.25vw;
     background-color: #0c2142;
-    left: 29.8vw;
+    left: 44.8vw;
     top: 35.33vw;
     transform: skew(-50deg);
 }
@@ -72,7 +72,7 @@ html, body{
     width: 4.5vw;
     height: 1.9vw;
     background-color: #0c2142;
-    left: 26vw;
+    left: 41vw;
     top: 36.7vw;
 }
 
@@ -80,7 +80,7 @@ html, body{
     width: 2.4vw;
     height: 7vw;
     background-color: #0c2142;
-    left: 32vw;
+    left: 47vw;
     top: 28vw;
 }
 
@@ -88,7 +88,7 @@ html, body{
     width: 2vw;
     height: 4.25vw;
     background-color: #0c2142;
-    left: 28.5vw;
+    left: 43.5vw;
     top: 19.6vw;
 }
 
@@ -96,7 +96,7 @@ html, body{
     width: 2.5vw;
     height: 8vw;
     background-color: #0c2142;
-    left: 33vw;
+    left: 48vw;
     top: 19.6vw;
     transform: skew(47deg);
 }
@@ -106,7 +106,7 @@ html, body{
     width: 2vw;
     height: 7vw;
     background-color: #0c2142;
-    left: 36.5vw;
+    left: 51.5vw;
     top: 19.6vw;
 }
 
@@ -114,7 +114,7 @@ html, body{
     width: 2.5vw;
     height: 8vw;
     background-color: #0c2142;
-    left: 41vw;
+    left: 56vw;
     top: 19.6vw;
     transform: skew(47deg);
 }
