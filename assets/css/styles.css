@@ -8,7 +8,7 @@ body {
     font-size: 50px;
     letter-spacing: 4px;
     top: 20%;
-    position: absolute;
+    position: relative;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%,-50%);
@@ -43,4 +43,22 @@ a {
 
 a:hover {
     color: #ffd199;
+}
+
+.shadow {
+    text-shadow: 2px 2px 0 blue,
+                 2px 2px 0 blue;
+
+}
+
+.shadow:hover {
+    position: relative;
+    top: -3px;
+    left: -3px;
+    text-shadow:1px 1px 0 blue,
+                2px 2px 0 blue,
+                3px 3px 0 blue,
+                4px 4px 0 blue,
+                5px 5px 0 blue,
+                6px 6px 0 blue;
 }

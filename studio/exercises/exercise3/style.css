@@ -1,0 +1,132 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: absolute;
+    left: 18vw;
+    top: -5vh;
+}
+
+.shape {
+    position: absolute;
+    background-color: #0c2142;
+}
+
+#a1 {
+    width: 2vw;
+    height: 20vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 20vw;
+    top: 35vh;
+    transform: skew(-25deg);
+}
+
+#a2 {
+    width: 2vw;
+    height: 20vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 24vw;
+    top: 35vh;
+}
+
+#a3 {
+    width: 8vw;
+    height: 3vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 22vw;
+    top: 46vh;
+    transform: skew(-20deg);
+}
+
+#a4 {
+    width: 2vw;
+    height: 16vh;
+    background-color: #0c2142;
+    position: absolute;
+    top: 57vh;
+    left: 24vw;
+}
+
+#d1 {
+    width: 2.5vw;
+    height: 5vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 29.4vw;
+    top: 46vh;
+    transform: skew(50deg);
+}
+
+
+#d2 {
+    width: 2.5vw;
+    height: 5vh;
+    background-color:#0c2142;
+    position: absolute;
+    left: 29.4vw;
+    top: 67.95vh;
+    transform: skew(-50deg);
+}
+
+#d3 {
+    width: 4vw;
+    height: 3vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 26vw;
+    top: 70vh;
+}
+
+#d4 {
+    width: 2.4vw;
+    height: 13.6vh;
+    background-color: #0c2142;
+    left: 31vw;
+    top: 52.80vh;
+}
+
+#m1a {
+    width: 2vw;
+    height: 7vh;
+    background-color: #0c2142;
+    position: absolute;
+    left: 28.5vw;
+    top: 37vh;
+}
+
+#m2a {
+    width: 2.5vw;
+    height: 15vh;
+    background-color: #0c2142;
+    left: 33vw;
+    top: 37vh;
+    transform: skew(47deg);
+}
+
+
+#m2 {
+    width: 2vw;
+    height: 13.5vh;
+    background-color: #0c2142;
+    left: 36.5vw;
+    top: 37vh;
+}
+
+#m2b {
+    width: 2.5vw;
+    height: 10vh;
+    background-color: #0c2142;
+    left: 39.5vw;
+    top: 37vh;
+    transform: skew(47deg);
+}
