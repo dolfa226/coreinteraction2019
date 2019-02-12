@@ -8,125 +8,113 @@ html, body{
     box-sizing: border-box;
 }
 
-.wrapper {
-    position: absolute;
-    left: 18vw;
-    top: -5vh;
-}
 
 .shape {
-    position: absolute;
+    position: fixed;
     background-color: #0c2142;
 }
 
 #a1 {
     width: 2vw;
-    height: 20vh;
+    height: 10vw;
     background-color: #0c2142;
-    position: absolute;
     left: 20vw;
-    top: 35vh;
+    top: 19vw;
     transform: skew(-25deg);
 }
 
 #a2 {
     width: 2vw;
-    height: 20vh;
+    height: 10vw;
     background-color: #0c2142;
-    position: absolute;
     left: 24vw;
-    top: 35vh;
+    top: 19vw;
 }
 
 #a3 {
     width: 8vw;
-    height: 3vh;
+    height: 1.5vw;
     background-color: #0c2142;
-    position: absolute;
     left: 22vw;
-    top: 46vh;
+    top: 24.25vw;
     transform: skew(-20deg);
 }
 
 #a4 {
     width: 2vw;
-    height: 16vh;
+    height: 11vw;
     background-color: #0c2142;
-    position: absolute;
-    top: 57vh;
+
+    top: 27.58vw;
     left: 24vw;
 }
 
 #d1 {
-    width: 2.5vw;
-    height: 5vh;
+    width: 2.7vw;
+    height: 3.25vw;
     background-color: #0c2142;
-    position: absolute;
-    left: 29.4vw;
-    top: 46vh;
+    left: 29.8vw;
+    top: 24.25vw;
     transform: skew(50deg);
 }
 
 
 #d2 {
-    width: 2.5vw;
-    height: 5vh;
-    background-color:#0c2142;
-    position: absolute;
-    left: 29.4vw;
-    top: 67.95vh;
+    width: 2.7vw;
+    height: 3.25vw;
+    background-color: #0c2142;
+    left: 29.8vw;
+    top: 35.33vw;
     transform: skew(-50deg);
 }
 
 #d3 {
-    width: 4vw;
-    height: 3vh;
+    width: 4.5vw;
+    height: 1.9vw;
     background-color: #0c2142;
-    position: absolute;
     left: 26vw;
-    top: 70vh;
+    top: 36.7vw;
 }
 
 #d4 {
     width: 2.4vw;
-    height: 13.6vh;
+    height: 7vw;
     background-color: #0c2142;
-    left: 31vw;
-    top: 52.80vh;
+    left: 32vw;
+    top: 28vw;
 }
 
 #m1a {
     width: 2vw;
-    height: 7vh;
+    height: 4.25vw;
     background-color: #0c2142;
-    position: absolute;
     left: 28.5vw;
-    top: 37vh;
+    top: 19.6vw;
 }
 
 #m2a {
     width: 2.5vw;
-    height: 15vh;
+    height: 8vw;
     background-color: #0c2142;
     left: 33vw;
-    top: 37vh;
+    top: 19.6vw;
     transform: skew(47deg);
 }
 
 
 #m2 {
     width: 2vw;
-    height: 13.5vh;
+    height: 7vw;
     background-color: #0c2142;
     left: 36.5vw;
-    top: 37vh;
+    top: 19.6vw;
 }
 
 #m2b {
     width: 2.5vw;
-    height: 10vh;
+    height: 8vw;
     background-color: #0c2142;
-    left: 39.5vw;
-    top: 37vh;
+    left: 41vw;
+    top: 19.6vw;
     transform: skew(47deg);
 }
