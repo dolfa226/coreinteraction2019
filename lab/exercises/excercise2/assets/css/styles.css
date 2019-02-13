@@ -17,10 +17,12 @@ html, body{
     background-color: black;
     float: left;
     position: fixed;
+    z-index: 100;
 }
 
 #logo {
-    color: white;
+    color: white; 
+    padding-left: 10px;
 }
 
 #logo h1 {
@@ -42,7 +44,9 @@ html, body{
     line-height: 35px; 
     text-decoration: none;
     font-size: 15px;
+    letter-spacing: 2px;
 }
+
 
 #content {
     width: 50%;
@@ -76,3 +80,51 @@ p {
     float: left;
     margin: 15px 10px 0px 10px;
 }
+
+.image1 {
+    position: absolute;
+    top: 20vh;
+    padding-left: 15vw;
+
+}
+
+.image1 img{
+    height: 20vw;
+    float: none;
+    padding: 20px 20px 20px 20px;
+}
+
+.image2 {
+    position: absolute;
+    top: 60vh;
+    padding-left: 15vw;
+
+}
+
+.image2 img{
+    height: 15.75vw;
+    float: none;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.image3 {
+    position: absolute;
+    top: 90vh;
+    padding-left: 15vw;
+    padding-bottom: 5vh;
+}
+
+.image3 img{
+    height: 19.75vw;
+    float: none;
+    padding: 20px 20px 20px 20px;
+
+}
+
+
+
+
+
+
+
