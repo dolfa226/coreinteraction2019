@@ -79,27 +79,56 @@ p {
     margin: 15px 10px 0px 10px;
 }
 
-
-.door1 {
-    background: url("img/door1.jpeg") fixed;     
+.background {
+    background: url("img/building3.jpeg") fixed;     
     background-size: 35vw;
     max-width: fit;
-    height: 55vw;
+    height: 57vw;
     background-blend-mode: difference;
     font-size: 100px;
     padding: 0vw;
 }
 
-.section1 img {
-    width: 20vw;
-    float: left;
+.section1 {
+    position: absolute;
+    top: 13vw;
+    padding-left: 130px;
 }
 
-.section1 p {
-    width: 35vw;
-    color: #252526;
+.section1 img {
+    width: 16vw;
+    float: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.section2 {
     position: absolute;
-    left: 60px;
-    top: 1800px;
-    padding-bottom: 100px;
+    top: 28vw;
+    padding-left: 130px;
+}
+
+.section2 img {
+    width: 16vw;
+    float: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.text {
+    width: 50vw;
+    position: absolute;
+    top: 63vw;
+    left: 25vw;
+}
+
+.section3 {
+    position: absolute;
+    top: 92vw;
+    padding-left: 130px;
+    padding-bottom: 10vw;
+}
+
+.section3 img {
+    width: 16vw;
+    float: left;
+    padding: 10px 20px 10px 20px;
 }
