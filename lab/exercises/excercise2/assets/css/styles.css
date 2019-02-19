@@ -10,6 +10,7 @@ html, body{
 }
 
 #navigation {
+    top: 0;
     width: 200px;
     height: 100%;
     margin: 0 10% 0 10%;
@@ -81,46 +82,45 @@ p {
     margin: 15px 10px 0px 10px;
 }
 
-.image1 {
-    position: absolute;
-    top: 20vh;
-    padding-left: 15vw;
-
+.grid {
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
-.image1 img{
-    height: 20vw;
-    float: none;
-    padding: 20px 20px 20px 20px;
+.container1 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    justify-content: space-between;
 }
 
-.image2 {
-    position: absolute;
-    top: 60vh;
-    padding-left: 15vw;
-
+.container1 img {
+    height: 10vw;
 }
 
-.image2 img{
-    height: 15.75vw;
-    float: none;
-    padding: 20px 20px 20px 20px;
+@media (max-width: 750px) {
 
-}
+    .grid {
+        margin-top: 40%;
+    }
 
-.image3 {
-    position: absolute;
-    top: 90vh;
-    padding-left: 15vw;
-    padding-bottom: 5vh;
-}
+    .container1 {
+        width: 60%;
+        flex-direction: column;
+    }
 
-.image3 img{
-    height: 19.75vw;
-    float: none;
-    padding: 20px 20px 20px 20px;
+    .container1 img {
+        width: 50vw;
+        height: auto;
+    }
+} 
 
-}
+
 
 
 
