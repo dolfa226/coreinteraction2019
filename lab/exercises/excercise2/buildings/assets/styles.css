@@ -81,6 +81,11 @@ p {
     margin: 15px 10px 0px 10px;
 }
 
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
 .background {
     background: url("img/building3.jpeg") fixed;     
     background-size: 35vw;
@@ -91,46 +96,66 @@ p {
     padding: 0vw;
 }
 
-.section1 {
-    position: absolute;
-    top: 13vw;
-    padding-left: 130px;
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.section1 img {
-    width: 16vw;
-    float: left;
-    padding: 10px 20px 10px 20px;
-}
-
-.section2 {
-    position: absolute;
-    top: 28vw;
-    padding-left: 130px;
-}
-
-.section2 img {
-    width: 16vw;
-    float: left;
-    padding: 10px 20px 10px 20px;
+.item img{
+    width: 15vw;
 }
 
 .text {
-    width: 50vw;
-    position: absolute;
-    top: 63vw;
-    left: 25vw;
+    width: 45vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+
 }
 
-.section3 {
-    position: absolute;
-    top: 92vw;
-    padding-left: 130px;
-    padding-bottom: 10vw;
-}
+@media (max-width: 750px) {
 
-.section3 img {
-    width: 16vw;
-    float: left;
-    padding: 10px 20px 10px 20px;
-}
+    body {
+        background-color: black;
+    }
+
+    p {
+        font-size: 13px;
+        position: relative;
+        color: white;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        position: absolute;
+        top: 20vh;
+    }
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    .item img {
+        width: 90vw;
+    }
+
+    .img {
+        width: 80vw;
+    }
+
+    .text {
+        width: 90vw;
+    }
+} 
+
+
+
