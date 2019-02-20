@@ -14,7 +14,7 @@ html, body{
     height: 100%;
     margin: 0 10% 0 10%;
     padding: 0 10px 0 10px;
-    background-color: white;
+    background-color: transparent;
     float: left;
     position: fixed;
     z-index: 100;
@@ -23,6 +23,7 @@ html, body{
 #logo {
     color: black; 
     padding-left: 10px;
+    text-shadow: 2px 0px 10px white;
 }
 
 #logo h1 {
@@ -40,6 +41,7 @@ html, body{
 
 .nav-link a {
     color: black;
+    text-shadow: 2px 0px 10px white;
     font-size: 25px;
     line-height: 35px; 
     text-decoration: none;
