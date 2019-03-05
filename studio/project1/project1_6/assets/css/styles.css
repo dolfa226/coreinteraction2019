@@ -1,0 +1,214 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: "Lato"; 
+    font-size: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    background: white;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div:hover {
+    opacity: 0.0;
+}
+
+div {
+    width: 100px;
+    height: 20px;
+    /* background-color: teal; */
+    background-color: white;
+    position: absolute;
+}
+
+div:hover {
+    opacity: 0.0;
+}
+
+
+#rec_1{
+    width: 1000px;
+    height: 2px;
+    left: 15vw;
+    top: 43vh;
+}
+
+#rec_2 {
+    width: 1000px;
+    height: 5px;
+    left: 15vw;
+    top: 45vh;
+}
+
+#rec_3 {
+    width: 1000px;
+    height: 8px;
+    left: 15vw;
+    top: 50vh;
+}
+
+#rec_4 {
+    width: 1000px;
+    height: 10px;
+    left: 15vw;
+    top: 52vh;
+}
+
+#rec_5 {
+    width: 1000px;
+    height: 15px;
+    left: 15vw;
+    top: 58vh;
+}
+
+#rec_6 {
+    width: 1000px;
+    height: 38px;
+    left: 15vw;
+    top: 62vh;
+}
+
+#rec_7 {
+    width: 1000px;
+    height: 43px;
+    left: 15vw;
+    top: 72vh;
+}
+
+#rec_8 {
+    width: 1000px;
+    height: 63px;
+    left: 15vw;
+    top: 79vh;
+}
+
+#rec_9 {
+    width: 1000px;
+    height: 73px;
+    left: 15vw;
+    top: 90vh;
+}
+
+#rec_10 {
+    width: 1000px;
+    height: 73px;
+    left: 15vw;
+    top: 100vh;
+}
+
+#rec_11 {
+    width: 1000px;
+    height: 90px;
+    left: 15vw;
+    top: 112vh;
+}
+
+#rec_12 {
+    width: 1000px;
+    height: 73px;
+    left: 15vw;
+    top: 128vh;
+}
+
+#rec_13 {
+    width: 1000px;
+    height: 63px;
+    left: 15vw;
+    top: 140vh;
+}
+
+#rec_14 {
+    width: 1000px;
+    height: 43px;
+    left: 15vw;
+    top: 150vh;
+}
+
+#rec_15 {
+    width: 1000px;
+    height: 38px;
+    left: 15vw;
+    top: 160vh;
+}
+
+#rec_16 {
+    width: 1000px;
+    height: 15px;
+    left: 15vw;
+    top: 170vh;
+}
+
+#rec_17 {
+    width: 1000px;
+    height: 10px;
+    left: 15vw;
+    top: 184vh;
+}
+
+#rec_18 {
+    width: 1000px;
+    height: 8px;
+    left: 15vw;
+    top: 192vh;
+}
+
+#rec_19 {
+    width: 1000px;
+    height: 5px;
+    left: 15vw;
+    top: 200vh;
+}
+
+#rec_20 {
+    width: 1000px;
+    height: 2px;
+    left: 15vw;
+    top: 208vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

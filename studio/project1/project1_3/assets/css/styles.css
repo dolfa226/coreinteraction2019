@@ -1,0 +1,281 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    /* width: 50vh;
+    height: 50vw; */
+    padding-left: 20px;
+    /* background-color: blue; */
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.float1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 50px;
+    animation-name: float1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes float1 {
+    from {transform: translate(0, 0px); } 
+    50%  {transform: translate(15px, 30px); }
+    to {transform: translate(0,-0px); }
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 20vw;
+    height: 5vw;
+}
+
+.float2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 30px;
+    animation-name: float2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes float2 {
+    from {transform: translate(0, 0px); } 
+    50%  {transform: translate(0px, 10px); }
+    to {transform: translate(0,-0px); }
+}
+
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+    width: 20vw;
+    height: 5vw;
+}
+
+
+.float3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 20px;
+    animation-name: float3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes float3 {
+    from {transform: translate(0, 0px); } 
+    50%  {transform: translate(-20px, 0px); }
+    to {transform: translate(0, -0px); }
+}
+
+
+.grid2 {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 50vw; 
+    position: relative;
+    left: 70vw;
+    /* background-color: blue; */
+    padding-left: 20px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+    width: 20vw;
+    height: 5vw;
+}
+
+.container4 {
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+    width: 20vw;
+    height: 5vw;
+}
+
+.float4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 50px;
+    animation-name: float4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes float4 {
+    from {transform: translate(0, 0px); } 
+    50%  {transform: translate(14px, 15px); }
+    to {transform: translate(6, -0px); }
+}
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    height: 5vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 50vh;
+    left: 15vw;
+}
+
+.float5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 50px;
+    position: relative;
+    padding: 20px;
+}
+
+.container6 {
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    height: 5vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 70vh;
+    left: 30vw;
+}
+
+.container7 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20vw;
+    height: 5vw;
+    /* background-color: red; */
+    position: absolute;
+    top: 90vh;
+    left: 30vw;
+}
+
+.container8 {
+    top: 150vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 20vw;
+}
+
+.float8 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: thin;
+    font-size: 40px;
+    animation-name: float2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes float8 {
+    from {transform: translate(0, 0px); } 
+    50%  {transform: translate(0px, 10px); }
+    to {transform: translate(0,-0px); }
+}
+
+.container9 {
+    padding-top: 40vh;
+    padding-left: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 15vw;
+}
+
+.size1 {
+    font-size: 30px;
+}
+
+.size2 {
+    font-size: 40px;
+}
+
+.size3 {
+    font-size: 50px;
+}
+
+.size4 {
+    font-size: 60px;
+}
+
+.size5 {
+    font-size: 70px;
+}
+
+.size6 {
+    font-size: 80px;
+}
+
+.size7 {
+    font-size: 90px;
+}
+
+.size8 {
+    font-size: 100px;
+}
+
+.size9 {
+    font-size: 110px;
+}
+
+.size10 {
+    font-size: 120px;
+}
+
+.size11 {
+    font-size: 130px;
+}
+
+.size12 {
+    font-size: 140px;
+}
+
+.size13 {
+    font-size: 150px;
+}
+
+.size14 {
+    font-size: 160px;
+}
+
+
+
+
+

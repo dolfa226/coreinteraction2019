@@ -1,0 +1,95 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: "Lato"; 
+    font-size: 14px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    background: white;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+}
+
+div:hover {
+    opacity: 0.0;
+}
+
+#rec_1{
+    left: 48vw;
+    top: 25.5vh;
+}
+
+#rec_2 {
+    left: 20vw;
+    top: 29vh;
+}
+
+#rec_3 {
+    left: 30vw;
+    top: 40vh;
+}
+
+#rec_4 {
+    left: 50vw;
+    top: 50vh;
+}
+
+#rec_5 {
+    left: 60vw;
+    top: 50vh;
+}
+
+#rec_6 {
+    left: 65vw;
+    top: 67vh;
+}
+
+#rec_7 {
+    width: 25vw;
+    height: 7vh;
+    left: 30vw;
+    top: 60vh;
+    
+}
+
+#rec_8 {
+    left: 54vw;
+    top: 67vh;
+}
+
+#rec_9 {
+    left: 63vw;
+    top: 64vh;
+}
+
+#rec_10 {
+    left: 23vw;
+    top: 80vh;
+    width: 20vw;
+}
+
+#rec_11 {
+    top: 90vh;
+    left: 20vw;
+}
+
+#rec_12 {
+    top: 92vh;
+    left: 40vw;
+    width: 18vw;
+    height: 1vh;
+}

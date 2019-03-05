@@ -1,0 +1,988 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    font-family: "Lato"; 
+    font-size: 50px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    background: white;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div:hover {
+    opacity: 0.0;
+}
+
+div {
+    width: 100px;
+    height: 20px;
+    /* background-color: teal; */
+    background-color: white;
+    position: absolute;
+}
+
+div:hover {
+    opacity: 0.0;
+}
+
+
+#rec_1{
+    width: 45px;
+    height: 30px;
+    left: 48vw;
+    top: 40vh;
+}
+
+#rec_2 {
+    width: 40px;
+    height: 30px;
+    left: 42vw;
+    top: 65vh;
+}
+
+#rec_3 {
+    width: 100px;
+    height: 20px;
+    left: 20vw;
+    top: 60vh;
+}
+
+#rec_4 {
+    width: 60px;
+    height: 60px;
+    left: 80vw;
+    top: 60vh;
+}
+
+#rec_5 {
+    width: 45px;
+    height: 30px;
+    left: 38vw;
+    top: 60vh;
+}
+
+#rec_6 {
+    width: 75px;
+    height: 30px;
+    left: 28vw;
+    top: 80vh;
+}
+
+#rec_7 {
+    width: 55px;
+    height: 30px;
+    left: 54vw;
+    top: 82vh;
+}
+
+#rec_8 {
+    width: 125px;
+    height: 30px;
+    left: 58vw;
+    top: 82vh;
+}
+
+#rec_8 {
+    width: 95px;
+    height: 30px;
+    left: 18vw;
+    top: 82vh;
+}
+
+#rec_9 {
+    width: 165px;
+    height: 30px;
+    left: 48vw;
+    top: 92vh;
+}
+
+#rec_10 {
+    width: 145px;
+    height: 30px;
+    left: 68vw;
+    top: 87vh;
+}
+
+#rec_11 {
+    width: 200px;
+    height: 80px;
+    left: 28vw;
+    top: 97vh;
+}
+
+#rec_12 {
+    width: 200px;
+    height: 95px;
+    left: 12vw;
+    top: 115vh;
+}
+
+#rec_13 {
+    width: 200px;
+    height: 100px;
+    left: 50vw;
+    top: 125vh;
+}
+
+#rec_14 {
+    width: 20px;
+    height: 40px;
+    left: 30vw;
+    top: 125vh;
+}
+
+
+#rec_15 {
+    width: 20px;
+    height: 40px;
+    left: 50vw;
+    top: 164vh;
+}
+
+#rec_16 {
+    width: 20px;
+    height: 60px;
+    left: 55vw;
+    top: 155vh;
+}
+
+#rec_17 {
+    width: 200px;
+    height: 200px;
+    left: 35vw;
+    top: 125vh;
+}
+
+#rec_18 {
+    width: 400px;
+    height: 30px;
+    left: 14vw;
+    top: 135vh;
+}
+
+#rec_19 {
+    width: 40px;
+    height: 30px;
+    left: 14vw;
+    top: 145vh;
+}
+
+#rec_20 {
+    width: 100px;
+    height: 80px;
+    left: 80vw;
+    top: 145vh;
+}
+
+#rec_21 {
+    width: 140px;
+    height: 80px;
+    left: 58vw;
+    top: 155vh;
+}
+
+#rec_22 {
+    width: 140px;
+    height: 120px;
+    left: 18vw;
+    top: 155vh;
+}
+
+#rec_23 {
+    width: 140px;
+    height: 100px;
+    left: 19vw;
+    top: 140vh;
+}
+
+#rec_24 {
+    width: 90px;
+    height: 30px;
+    left: 30vw;
+    top: 155vh;
+
+}
+
+#rec_25 {
+    width: 80px;
+    height: 27px;
+    left: 29vw;
+    top: 160vh;
+}
+
+#rec_26 {
+    width: 80px;
+    height: 27px;
+    left: 50vw;
+    top: 160vh;
+}
+
+#rec_27 {
+    width: 20px;
+    height: 80px;
+    left: 73vw;
+    top: 140vh;
+}
+
+#rec_28 {
+    width: 40px;
+    height: 80px;
+    left: 68vw;
+    top: 140vh;
+}
+
+#rec_29 {
+    width: 70px;
+    height: 80px;
+    left: 68vw;
+    top: 120vh;
+}
+
+
+#rec_30 {
+    width: 170px;
+    height: 30px;
+    left: 68vw;
+    top: 100vh;
+}
+
+#rec_31 {
+    width: 170px;
+    height: 30px;
+    left: 60vw;
+    top: 90vh;
+}
+
+#rec_32 {
+    width: 100px;
+    height: 30px;
+    left: 60vw;
+    top: 120vh;
+}
+
+#rec_32 {
+    width: 20px;
+    height: 30px;
+    left: 60vw;
+    top: 120vh;
+}
+
+#rec_33 {
+    width: 30px;
+    height: 30px;
+    left: 56vw;
+    top: 123vh;
+}
+
+#rec_34 {
+    width: 30px;
+    height: 50px;
+    left: 46vw;
+    top: 120vh;
+}
+
+#rec_35 {
+    width: 50px;
+    height: 100px;
+    left: 40vw;
+    top: 110vh;
+}
+
+#rec_36 {
+    width: 60px;
+    height: 90px;
+    left: 30vw;
+    top: 120vh;
+}
+
+#rec_37 {
+    width: 100px;
+    height: 40px;
+    left: 30vw;
+    top: 115vh;
+}
+
+#rec_38 {
+    width: 100px;
+    height: 30px;
+    left: 20vw;
+    top: 128vh;
+}
+
+#rec_39 {
+    width: 90px;
+    height: 30px;
+    left: 13vw;
+    top: 132vh;
+}
+
+#rec_40 {
+    width: 20px;
+    height: 30px;
+    left: 20vw;
+    top: 138vh;
+}
+
+#rec_41 {
+    width: 18px;
+    height: 40px;
+    left: 20vw;
+    top: 110vh;
+}
+
+#rec_42 {
+    width: 30px;
+    height: 40px;
+    left: 70vw;
+    top: 110vh;
+}
+
+#rec_43 {
+    width: 30px;
+    height: 40px;
+    left: 50vw;
+    top: 110vh;
+}
+
+#rec_44 {
+    width: 30px;
+    height: 40px;
+    left: 30vw;
+    top: 105vh;
+}
+
+#rec_45 {
+    width: 30px;
+    height: 70px;
+    left: 65vw;
+    top: 105vh;
+}
+
+#rec_46 {
+    width: 200px;
+    height: 70px;
+    left: 45vw;
+    top: 105vh;
+}
+
+#rec_47 {
+    width: 200px;
+    height: 90px;
+    left: 38vw;
+    top: 160vh;
+}
+
+#rec_48 {
+    width: 20px;
+    height: 100px;
+    left: 30vw;
+    top: 140vh;
+}
+
+#rec_49 {
+    width: 20px;
+    height: 50px;
+    left: 40vw;
+    top: 150vh;
+}
+
+#rec_50 {
+    width: 20px;
+    height: 50px;
+    left: 20vw;
+    top: 150vh;
+}
+
+#rec_51 {
+    width: 20px;
+    height: 50px;
+    left: 30vw;
+    top: 150vh;
+}
+
+#rec_52 {
+    width: 35px;
+    height: 50px;
+    left: 40vw;
+    top: 150vh;
+}
+
+#rec_53 {
+    width: 35px;
+    height: 80px;
+    left: 60vw;
+    top: 140vh;
+    transform: rotate(30deg);
+}
+
+
+#rec_54 {
+    width: 35px;
+    height: 80px;
+    left: 55vw;
+    top: 150vh;
+    transform: rotate(-30deg);
+}
+
+#rec_55 {
+    width: 30px;
+    height: 100px;
+    left: 55vw;
+    top: 135vh;
+}
+
+#rec_56 {
+    width: 20px;
+    height: 110px;
+    left: 50vw;
+    top: 140vh;
+}
+
+#rec_57 {
+    width: 40px;
+    height: 80px;
+    left: 43vw;
+    top: 150vh;
+}
+
+#rec_58 {
+    width: 40px;
+    height: 80px;
+    left: 43vw;
+    top: 150vh;
+}
+
+#rec_59 {
+    width: 40px;
+    height: 80px;
+    left: 23vw;
+    top: 150vh;
+}
+
+#rec_60 {
+    width: 120px;
+    height: 20px;
+    left: 33vw;
+    top: 153vh;
+}
+
+#rec_61 {
+    width: 120px;
+    height: 20px;
+    left: 30vw;
+    top: 143vh;
+    transform: rotate(70deg);
+}
+
+#rec_62 {
+    width: 40px;
+    height: 20px;
+    left: 70vw;
+    top: 160vh;
+    transform: rotate(70deg);
+}
+
+#rec_63 {
+    width: 40px;
+    height: 40px;
+    left: 70vw;
+    top: 150vh;
+    transform: rotate(70deg);
+}
+
+#rec_64 {
+    width: 70px;
+    height: 70px;
+    left: 70vw;
+    top: 130vh;
+    transform: rotate(60deg);
+}
+
+#rec_65 {
+    width: 30px;
+    height: 70px;
+    left: 50vw;
+    top: 120vh;
+    transform: rotate(60deg);
+}
+
+#rec_66 {
+    width: 20px;
+    height: 70px;
+    left: 66vw;
+    top: 118vh;
+    transform: rotate(60deg);
+}
+
+#rec_67 {
+    width: 20px;
+    height: 70px;
+    left: 66vw;
+    top: 118vh;
+    transform: rotate(60deg);
+}
+
+#rec_68 {
+    width: 70px;
+    height: 20px;
+    left: 66vw;
+    top: 115vh;
+}
+
+#rec_69 {
+    width: 20px;
+    height: 70px;
+    left: 60vw;
+    top: 115vh;
+}
+
+#rec_70 {
+    width: 20px;
+    height: 90px;
+    left: 27vw;
+    top: 115vh;
+}
+
+#rec_71 {
+    width: 20px;
+    height: 50px;
+    left: 27vw;
+    top: 105vh;
+}
+
+#rec_72 {
+    width: 20px;
+    height: 50px;
+    left: 27vw;
+    top: 105vh;
+}
+
+#rec_73 {
+    width: 70px;
+    height: 70px;
+    left: 17vw;
+    top: 105vh;
+}
+
+#rec_74 {
+    width: 70px;
+    height: 70px;
+    left: 80vw;
+    top: 105vh;
+}
+
+#rec_75 {
+    width: 150px;
+    height: 50px;
+    left: 60vw;
+    top: 148vh;
+}
+
+#rec_76 {
+    width: 150px;
+    height: 50px;
+    left: 60vw;
+    top: 138vh;
+}
+
+#rec_77 {
+    width: 150px;
+    height: 30px;
+    left: 70vw;
+    top: 145vh;
+}
+
+#rec_78 {
+    width: 150px;
+    height: 30px;
+    left: 50vw;
+    top: 115vh;
+}
+
+#rec_79 {
+    width: 30px;
+    height: 30px;
+    left: 55vw;
+    top: 113vh;
+}
+
+#rec_80 {
+    width: 30px;
+    height: 30px;
+    left: 50vw;
+    top: 113vh;
+}
+
+#rec_81 {
+    width: 30px;
+    height: 30px;
+    left: 60vw;
+    top: 113vh;
+}
+
+#rec_82 {
+    width: 30px;
+    height: 20px;
+    left: 63vw;
+    top: 113vh;
+}
+
+
+#rec_83 {
+    width: 30px;
+    height: 20px;
+    left: 63vw;
+    top: 106vh;
+}
+
+#rec_84 {
+    width: 30px;
+    height: 20px;
+    left: 70vw;
+    top: 106vh;
+}
+
+#rec_85 {
+    width: 105px;
+    height: 80px;
+    left: 73vw;
+    top: 136vh;
+}
+
+#rec_86 {
+    width: 60px;
+    height: 60px;
+    left: 32vw;
+    top: 106vh;
+}
+
+#rec_87 {
+    width: 80px;
+    height: 60px;
+    left: 34vw;
+    top: 116vh;
+}
+
+#rec_88 {
+    width: 80px;
+    height: 60px;
+    left: 30vw;
+    top: 170vh;
+
+}
+
+#rec_89 {
+    width: 20px;
+    height: 60px;
+    left: 28vw;
+    top: 130vh;
+}
+
+#rec_90 {
+    width: 20px;
+    height: 60px;
+    left: 22vw;
+    top: 132vh;
+}
+
+#rec_91 {
+    width: 27px;
+    height: 90px;
+    left: 14vw;
+    top: 160vh;
+}
+
+#rec_92 {
+    width: 27px;
+    height: 55px;
+    left: 16vw;
+    top: 163vh;
+}
+
+#rec_93 {
+    width: 800px;
+    height: 500px;
+    left: 20vw;
+    top: 170vh;
+}
+
+#rec_94 {
+    width: 80px;
+    height: 500px;
+    left: 20vw;
+    top: 170vh;
+    transform: rotate(30deg);
+}
+
+#rec_95 {
+    width: 80px;
+    height: 500px;
+    left: 80vw;
+    top: 170vh;
+    transform: rotate(140deg);
+}
+
+#rec_96 {
+    width: 80px;
+    height: 120px;
+    left: 16vw;
+    top: 170vh;
+}
+
+#rec_97 {
+    width: 80px;
+    height: 120px;
+    left: 80vw;
+    top: 210vh;
+}
+
+#rec_98 {
+    width: 100px;
+    height: 30px;
+    left: 75vw;
+    top: 220vh;
+}
+
+#rec_99 {
+    width: 30px;
+    height: 30px;
+    left: 76vw;
+    top: 215vh;
+}
+
+#rec_100 {
+    width: 70px;
+    height: 30px;
+    left: 14vw;
+    top: 200vh;
+}
+
+#rec_101 {
+    width: 20px;
+    height: 70px;
+    left: 18vw;
+    top: 190vh;
+}
+
+#rec_102 {
+    width: 28px;
+    height: 70px;
+    left: 15vw;
+    top: 190vh;
+}
+
+#rec_103 {
+    width: 80px;
+    height: 100px;
+    left: 15vw;
+    top: 230vh;
+    transform: rotate(80deg);
+}
+
+#rec_104 {
+    width: 40px;
+    height: 100px;
+    left: 15vw;
+    top: 200vh;
+    transform: rotate(80deg);
+}
+
+#rec_105 {
+    width: 30px;
+    height: 100px;
+    left: 75vw;
+    top: 194vh;
+    transform: rotate(80deg);
+}
+
+#rec_106 {
+    width: 30px;
+    height: 200px;
+    left: 55vw;
+    top: 224vh;
+    transform: rotate(80deg);
+}
+
+#rec_107 {
+    width: 30px;
+    height: 200px;
+    left: 30vw;
+    top: 224vh;
+    transform: rotate(200deg);
+}
+
+#rec_108 {
+    width: 200px;
+    height: 30px;
+    left: 30vw;
+    top: 237vh;
+}
+
+#rec_109 {
+    width: 300px;
+    height: 30px;
+    left: 35vw;
+    top: 237vh;
+}
+
+#rec_110 {
+    width: 200px;
+    height: 30px;
+    left: 65vw;
+    top: 237vh;
+}
+
+#rec_111 {
+    width: 50px;
+    height: 50px;
+    left: 68vw;
+    top: 237vh;
+}
+
+#rec_111 {
+    width: 50px;
+    height: 50px;
+    left: 63vw;
+    top: 237vh;
+}
+
+#rec_112 {
+    width: 50px;
+    height: 50px;
+    left: 43vw;
+    top: 237vh;
+}
+
+#rec_113 {
+    width: 50px;
+    height: 50px;
+    left: 47vw;
+    top: 237vh;
+}
+
+#rec_114 {
+    width: 100px;
+    height: 50px;
+    left: 20vw;
+    top: 237vh;
+}
+
+#rec_115 {
+    width: 100px;
+    height: 50px;
+    left: 20vw;
+    top: 237vh;
+}
+
+#rec_116 {
+    width: 40px;
+    height: 50px;
+    left: 20vw;
+    top: 245vh;
+}
+
+#rec_117 {
+    width: 40px;
+    height: 50px;
+    left: 15vw;
+    top: 245vh;
+    transform: rotate(45deg);
+}
+
+#rec_118 {
+    width: 100px;
+    height: 50px;
+    left: 20vw;
+    top: 245vh;
+}
+
+#rec_119 {
+    width: 30px;
+    height: 50px;
+    left: 35vw;
+    top: 240vh;
+}
+
+#rec_119 {
+    width: 70px;
+    height: 20px;
+    left: 30vw;
+    top: 246vh;
+}
+
+#rec_120 {
+    width: 70px;
+    height: 30px;
+    left: 56vw;
+    top: 240vh;
+    transform: rotate(60deg);
+}
+
+#rec_121 {
+    width: 30px;
+    height: 70px;
+    left: 60vw;
+    top: 237vh;
+    transform: rotate(10deg);
+}
+
+#rec_122 {
+    width: 30px;
+    height: 70px;
+    left: 33vw;
+    top: 237vh;
+    transform: rotate(10deg);
+}
+
+#rec_123 {
+    width: 14px;
+    height: 70px;
+    left: 37vw;
+    top: 237vh;
+    transform: rotate(10deg);
+}
+
+
+#rec_124 {
+    width: 14px;
+    height: 70px;
+    left: 40vw;
+    top: 237vh;
+    transform: rotate(-10deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
