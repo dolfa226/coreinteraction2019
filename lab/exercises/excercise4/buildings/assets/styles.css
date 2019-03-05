@@ -10,77 +10,30 @@ html, body{
 }
 
 #navigation {
-    width: 200px;
+    width: 10%;
     height: 100%;
-    margin: 0 10% 0 10%;
-    padding: 0 10px 0 10px;
-    background-color: transparent;
-    float: left;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
+    top: 50vh;
+
 }
 
-#logo {
-    color: black; 
-    padding-left: 10px;
-    text-shadow: 2px 0px 10px white;
+#navigation li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    padding: 10px;
+
 }
 
-#logo h1 {
-    margin: 0px 0px 0px 0px;
-    padding: 10px 0px 10px 0px;
-    font-size: 51px;
-    line-height: 60px;
-}
-
-.nav-link {
-    background-color: transparent;
-    margin: 10px 0px 10px 0px;
-    padding: 5px 5px 5px 5px;
-}
-
-.nav-link a {
-    color: black;
-    text-shadow: 2px 0px 10px white;
-    font-size: 25px;
-    line-height: 35px; 
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-
-#content {
-    width: 50%;
-    margin: 0px auto 0px auto;
-    padding: 100px 25px 100px 25px;
-    float: left;
-}
-
-p {
-    font-size: 20px;
-    line-height: 25px;
-}
-
-#navigation.top {
-    width: 100%;
-    height: auto;
-    padding: 10px 0px 10px 0px;
-    margin: 0px 0px 0px 0px;
-    display: table;
-}
-
-#navigation.top #logo {
-    float: left;
-}
-
-#navigation.top #logo h1 {
-    padding: 10px 10px 10px 10px;
-}
-
-#navigation.top .nav-link {
-    float: left;
-    margin: 15px 10px 0px 10px;
+.circle {
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    position: fixed;
 }
 
 .grid {
@@ -88,76 +41,71 @@ p {
     flex-direction: row;
 }
 
-.background {
-    background: url("img/building3.jpeg") fixed;     
-    background-size: 35vw;
-    max-width: fit;
-    height: 57vw;
-    background-blend-mode: difference;
-    font-size: 100px;
-    padding: 0vw;
-}
-
 .container {
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
     justify-content: space-evenly;
-    width: 80%;
+    width: 50%;
     padding-top: 5%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.item img{
-    width: 15vw;
+.container2 {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item2 img{
+    width: 10vw;
+}
+
+.item2 {
+    opacity: 0.5;
 }
 
 .text {
-    width: 45vw;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5%;
-
+    width: 50%;
+    position: fixed;
+    margin-top: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
+    z-index: 100;
 }
 
-@media (max-width: 750px) {
+.text:hover {
+    background-color: white;
+}
+.item img {
+    width: 20vw;
+}
 
-    body {
-        background-color: black;
-    }
+.item {
+    opacity: 0.5;
+}
+.item:nth-child(2n):hover{
+    transform: rotate(30deg);
+}
 
-    p {
-        font-size: 13px;
-        position: relative;
-        color: white;
-    }
+.item:nth-child(2n+1):hover{
+    transform: rotate(-30deg);
+}
 
-    .grid {
-        display: flex;
-        flex-direction: row;
-        flex-flow: wrap;
-        position: absolute;
-        top: 20vh;
-    }
+.item:hover {
+    opacity: 1.0;
+}
 
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-    }
-    .item img {
-        width: 90vw;
-    }
 
-    .img {
-        width: 80vw;
-    }
-
-    .text {
-        width: 90vw;
-    }
-} 
+.item2:hover {
+    opacity: 1.0;
+}
 
 
 

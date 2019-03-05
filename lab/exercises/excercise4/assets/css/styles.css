@@ -13,7 +13,9 @@ html, body{
     width: 10%;
     height: 100%;
     position: fixed;
-    background-color: gray;
+    z-index: 200;
+    top: 50vh;
+
 }
 
 #navigation li{
@@ -27,22 +29,22 @@ html, body{
 .circle {
     height: 10px;
     width: 10px;
-    background: #000000;
+    background: white;
     border-radius: 50%;
+    border: 1px solid black;
     display: inline-block;
-
+    position: fixed;
 }
 
-.circle:hover{
-    background: #fff;
-    outline: 1px solid #000000;
-    border-radius: 50%;
-    height: 10px;
-    width: 10px;
+.title {
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    
 }
-
-
-
 
 
 

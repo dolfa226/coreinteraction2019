@@ -10,132 +10,113 @@ html, body{
 }
 
 #navigation {
-    width: 200px;
+    width: 10%;
     height: 100%;
-    margin: 0 10% 0 10%;
-    padding: 0 10px 0 10px;
-    background-color: transparent;
-    float: left;
     position: fixed;
-    z-index: 100;
+    z-index: 200;
+    top: 50vh;
+
 }
 
-#logo {
-    color: black; 
-    text-shadow: 2px 0px 10px white;
-    padding-left: 10px;
+#navigation li{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    padding: 10px;
+
 }
 
-#logo h1 {
-    margin: 0px 0px 0px 0px;
-    padding: 10px 0px 10px 0px;
-    font-size: 51px;
-    line-height: 60px;
-}
-
-.nav-link {
-    background-color: transparent;
-    margin: 10px 0px 10px 0px;
-    padding: 5px 5px 5px 5px;
-}
-
-.nav-link a {
-    color: black;
-    text-shadow: 2px 0px 10px white;
-    font-size: 25px;
-    line-height: 35px; 
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-
-#content {
-    width: 50%;
-    margin: 0px auto 0px auto;
-    padding: 100px 25px 100px 25px;
-    float: left;
-}
-
-p {
-    font-size: 20px;
-    line-height: 25px;
-}
-
-#navigation.top {
-    width: 100%;
-    height: auto;
-    padding: 10px 0px 10px 0px;
-    margin: 0px 0px 0px 0px;
-    display: table;
-}
-
-#navigation.top #logo {
-    float: left;
-}
-
-#navigation.top #logo h1 {
-    padding: 10px 10px 10px 10px;
-}
-
-#navigation.top .nav-link {
-    float: left;
-    margin: 15px 10px 0px 10px;
+.circle {
+    height: 10px;
+    width: 10px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+    position: fixed;
 }
 
 .grid {
     display: flex;
     flex-direction: row;
+    flex-flow: wrap;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     flex-flow: wrap;
-    margin-left: 2vw;
-    padding-top: 10%;
-    width: 30%;
-    margin-right: 2vw;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 50%;
 }
 
-p {
-    position: fixed;
+
+.item {
+    width: 30vw;
+    filter: grayscale(100%);
+    opacity: 0.3;
 }
 
-.item img{
+.item:nth-child(2n) {
+    opacity: 0.6;
+}
+
+
+.item img {
     width: 30vw;
 }
 
-@media (max-width: 750px) {
 
-    p {
-        font-size: 11px;
-        position: relative;
-    }
+.item:hover {
+    opacity: 1.0;
+    z-index: 100;
+    background-color: none;
+}
 
-    .grid {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 20vh;
-    }
+.text {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 15%;
+    z-index: 100;
+    position: fixed;
+}
 
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    .item img {
-        width: 50vw;
-    }
-
-    .img {
-        width: 80vw;
-    }
-} 
+.title {
+    font-size: 25px;
+    font-family: "Lato";
+    letter-spacing: 10px;
+}
 
 
+p {
+    font-size: 20px;
+    font-family: "Lato";
+    filter: blur(2px);
+}
 
+p:hover {
+    filter: blur(0); 
+}
 
+p::first-line {
+    font-variant: small-caps;
+    font-size: 30px;
+}
 
+a:link {
+    text-decoration: none
+}
 
+a:active {
+    font-size: 40px;
+    color: black;
+}
+
+a:visited {
+    color: gray;
+}
