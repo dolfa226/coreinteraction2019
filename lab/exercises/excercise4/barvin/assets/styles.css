@@ -120,3 +120,42 @@ a:active {
 a:visited {
     color: gray;
 }
+
+@media (max-width: 750px) {
+    .title {
+        font-size: 15px;
+    }
+    p {
+        font-size: 12px;
+    }
+
+    .text {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .item img {
+        width: 90vw;
+    }
+
+    .item {
+        width: 90vw;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -105,3 +105,23 @@ html, body{
     letter-spacing: 20px;
 }
 
+@media (max-width: 750px) {
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+
+    }
+
+    .item1 img{
+        height: 50vw;
+    }
+
+    .background {
+        background: url("img/door10.jpeg") fixed;     
+        background-size: 100vw;
+
+    }
+    
+}
