@@ -1,0 +1,45 @@
+
+      //adds an event listener to the 'window'object 
+      window.addEventListener('load', function(e) {
+    
+        //string that assigns the variable 'appleGrid' to the selector method of the id 'apple-grid' 
+        var appleGrid = document.getElementById('apple-grid');
+        //string that assigns the variable 'appleList' to the selector method of the id 'apple-grid' 
+        var appleList = document.getElementById('apple-list');
+        //string that assigns the variable 'appleThumbs' to the selector method of the id 'apple-thumbs' 
+        var appleThumbs = document.getElementById('apple-thumbs');
+        //string that assigns the variable 'gridApples' to call the elements with 'apple' 
+        var gridApples = document.querySelectorAll('.apple');
+
+        //defines .forEach array method 
+        gridApples.forEach((gridApple, i) => {
+        //adds an event listener to the 'gridapple' 
+          gridApple.addEventListener('click', pickApple);
+        });
+      
+        //defines function pickApple(e) 
+        function pickApple(e) {
+          //string that assigns the variable 'apple' to event target 
+          var apple = e.target;
+          //string that defines the variable 'applename' to the dataset values 
+          var appleName = apple.dataset.apple.toString();
+      
+          //string that defines that 'appleListItem; will create the HTML element of 'li' 
+          var appleListItem = document.createElement('li');
+
+          //string that defines an ordered list to the selector method 
+          var ol = appleList.querySelector('ol');
+          //append the text to 'appleListItem' to ol  
+          ol.appendChild(appleListItem);
+          //string that defines the inner text of the list items of the variable 'appleListItem' 
+          appleListItem.innerText = appleName;
+      
+          //'appleThumb' will be the new clone of apple and children of apple will also be cloned 
+          var appleThumb = apple.cloneNode(true);
+
+          //appends the element 'appleThumb' to the last child of the element 'appleThumbs'
+          appleThumbs.appendChild(appleThumb);
+      
+        }
+      
+      });
