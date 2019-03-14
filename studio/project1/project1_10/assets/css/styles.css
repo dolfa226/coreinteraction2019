@@ -1,5 +1,4 @@
 body{
-    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0px;
@@ -15,137 +14,251 @@ body{
     box-sizing: border-box;
 }
 
-div:hover {
-    opacity: 0.0;
-}
 
 p {
     font-size: 50px;
 } 
 
-div {
-    width: 100px;
-    height: 20px;
-    background-color: teal;
-    /* background-color: white; */
+
+.container {
+    margin-top: 100vh;
+    position: relative;
+}
+
+.rec {
+    width: 70vw;
+    height: 4.5vh;
+    /* background-color: teal; */
+    background-color: white;
     position: fixed;
 }
 
-div:hover {
+.rec:hover {
     opacity: 0.0;
 }
 
-
-#rec_1 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
+ #rec_1 {
     top: 0vh;
+
 }
 
 #rec_2 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 6vh;
-
 }
 
 #rec_3 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 12vh;
 }
 
 #rec_4 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 18vh;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #rec_5 {
-    width: 1000px;
-    height: 35px;
     left: 15vw;
     top: 26vh;
 }
 
 #rec_6 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 33vh;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #rec_7 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
-    top: 40vh;
+    top: 41vh;
 }
 
 
 #rec_8 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 47vh;
 }
 
 #rec_9 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
-    top: 54vh;
+    top: 55vh;
 }
 
 #rec_10 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 62vh;
 }
 
 #rec_11 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
-    top: 69vh;
-}
+    top: 70vh;
+} 
 
 #rec_12 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
     top: 77vh;
 }
 
 #rec_13 {
-    width: 1000px;
-    height: 35px;
-    left: 15vw;
-    top: 84vh;
-}
+    top: 85vh;
+} 
 
 #rec_14 {
-    width: 1000px;
-    height: 90px;
-    left: 15vw;
     top: 92vh;
+} 
+
+.endnote p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 100vh;
+    margin-bottom: 1vh;
+}
+
+br {
+    line-height: 14.5vh;
 }
 
 @media (max-width: 750px) {
     p {
         font-size: 30px;
-
     }
+
+    #rec_1 {
+        height: 18px;
+    }
+
+    #rec_2 {
+        left: 15vw;
+        top: 5vh;
+        height: 18px;
+    }
+
+    #rec_3 {
+        left: 15vw;
+        top: 9vh;
+        height: 18px;
+    }
+
+
+    #rec_4 {
+        left: 15vw;
+        top: 13.5vh;
+        height: 18px;
+    }
+
+    #rec_5 {
+        left: 15vw;
+        top: 13.5vh;
+        height: 18px;
+    }
+
+    #rec_6 {
+        left: 15vw;
+        top: 18vh;
+        height: 18px;
+    }
+
+    #rec_7 {
+        left: 15vw;
+        top: 23vh;
+        height: 18px;
+    }
+
+    #rec_8 {
+        left: 15vw;
+        top: 27.5vh;
+        height: 18px;
+    }
+
+    #rec_9 {
+        left: 15vw;
+        top: 36vh;
+        height: 18px;
+    }
+
+    #rec_10 {
+        left: 15vw;
+        top: 41vh;
+        height: 18px;
+    }
+
+    #rec_11 {
+        left: 15vw;
+        top: 45.25vh;
+        height: 18px;
+    }
+
+    #rec_12 {
+        left: 15vw;
+        top: 50vh;
+        height: 18px;
+    }
+
+    #rec_13 {
+        left: 15vw;
+        top: 54.5vh;
+        height: 18px;
+    }
+
+    #rec_14 {
+        left: 15vw;
+        top: 59vh;
+        height: 18px;
+    }
+
+    #rec_15 {
+        width: 1000px;
+        left: 15vw;
+        top: 64vh;
+        height: 18px;
+    }
+
+    #rec_16 {
+        width: 1000px;
+        left: 15vw;
+        top: 68vh;
+        height: 18px;
+    }
+
+    #rec_17 {
+        width: 1000px;
+        left: 15vw;
+        top: 72.75vh;
+        height: 18px;
+    }
+
+    #rec_18 {
+        width: 1000px;
+        left: 15vw;
+        top: 77.25vh;
+        height: 18px;
+    }
+
+    #rec_19 {
+        width: 1000px;
+        left: 15vw;
+        top: 82vh;
+        height: 18px;
+    }
+
+    #rec_20 {
+        width: 1000px;
+        left: 15vw;
+        top: 87vh;
+        height: 18px;
+    }
+
+    #rec_21 {
+        width: 1000px;
+        left: 15vw;
+        top: 91.5vh;
+        height: 18px;
+    }
+
+
+    #rec_22 {
+        width: 1000px;
+        left: 15vw;
+        top: 96vh;
+        height: 18px;
+    }
+
 }
+
+
 
 
 
