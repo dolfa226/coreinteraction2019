@@ -100,15 +100,19 @@ p {
     top: 92vh;
 } 
 
-.endnote p {
+.endnote {
+    margin-top: 50vh;
+    margin-bottom: 35vh;
+}
+
+.quote p {
     font-size: 15px;
     text-align: center;
-    margin-top: 100vh;
-    margin-bottom: 1vh;
+    padding-top: 4vh;
 }
 
 br {
-    line-height: 14.5vh;
+    line-height: 10vh;
 }
 
 @media (max-width: 750px) {
