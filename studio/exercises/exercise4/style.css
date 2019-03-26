@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+    
+.background {
+    background-color: #001942;
+    opacity: .3;
+}
+p {
+    margin: 0;
+    color: #001942;
+}
+
+#name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    margin-top: 5vh;
+    margin-right: 25vw;
+    opacity: .5;
+}
+
+#time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    text-transform: uppercase;
+    opacity: .5;
+}
+
+
+
+#ticker {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    opacity: .5;
+
+}
+
+#ticker2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    margin-left: 30vw;
+    margin-top: 20vh;
+    padding: 0;
+    color: white;
+    z-index: 100;
+}
+
+#clock {
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 17vw;
+    background-color: grey;
+    transition: .7s ease;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    box-shadow: 40px 40px 0 0 #dbdcdd;
+    opacity: .7;
+}
