@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.navigation {
+    width: 50px;
+    height: 200vh;
+    position: absolute;
+    background-color: white;
+
+}
+
+.date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding-top: 150px;
+    position: relative;
+    right: 0;
+    transform: rotate(180deg);
+    z-index: 100;
+}
+
+a:active {
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+#month {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+#day {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+
+#map {
+    width: 100vw;
+    height: 500px;
+}
+        
+button {
+    background-color: none;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.container {
+    width: 50vw;
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+
+}
+

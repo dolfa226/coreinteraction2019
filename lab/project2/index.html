@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>receipts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/js/scripts.js"></script>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+
+</head>
+
+
+<body>
+    <!-- <div class="navigation">
+        <a href="jan25/index.html" class="date">Jan 25, 2019</a>
+        <a href="../jan28/index.html" class="date">Jan 28, 2019</a>
+        <div class="date"> Jan 29, 2019 </div>
+        <div class="date"> Jan 30, 2019 </div>
+        <div class="date"> Jan 31, 2019 </div>
+    </div> -->
+
+    <div id="map"></div>
+
+    <script>
+
+
+        var map = L.map('map',{
+        center: [40.733139, -73.993256],
+        zoom: 15
+        });
+
+    
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+    
+        var marker = L.marker([40.733139, -73.993256]).addTo(map);
+        marker.bindPopup("<b>Argo Tea</b><br>$5.39").openPopup();
+
+        var marker = L.marker([40.734057, -73.992456]).addTo(map);
+        marker.bindPopup("<b>Sweetgreen</b><br>$13.88").openPopup();
+
+        var marker = L.marker([40.732889, -73.993868]).addTo(map);
+        marker.bindPopup("<b>Amorino</b><br>$6.59").openPopup();
+        
+        var marker = L.marker([40.730001, -73.990791]).addTo(map);
+        marker.bindPopup("<b>CAVA</b><br>$11.40").openPopup();
+
+        var marker = L.marker([40.735088, -73.993306]).addTo(map);
+        marker.bindPopup("<b>Joe's Coffee</b><br>$4.50").openPopup();
+
+    </script>
+
+
+<div class="container">
+    
+
+<button onclick="myFunction()">MONTH</button>
+
+
+        <div id="month"> 
+        January
+        February 
+        March 
+        April 
+        </div>
+
+
+
+
+<button onclick="myFunction2()">DAY</button>
+
+
+        <div id="day">
+        1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 21 22 23 24 25 26 27 28 29 30 31
+        </div>
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+    <!-- <div class="cafe">Argo Tea</div>
+    <div class="receipt">
+
+        <p>
+            <br>JAN 25	
+            <br>$5.39
+            <br>Chocolate Mint Tea
+            <br>Iced Teappuccinos 
+        </p>
+    </div> -->
+
+
+
+
+   </body>
+</html>
