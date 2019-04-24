@@ -4,6 +4,28 @@ body {
 
 }
 
+#map {
+    position: fixed;
+}
+
+.navigation {
+    /* background-color: red; */
+    position: absolute;
+    right: 10vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    list-style: none;
+
+}
+
+.navigation li {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+
+}
+
 .mapboxgl-popup {
     max-width: 200px;
 }
