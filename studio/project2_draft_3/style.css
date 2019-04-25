@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f5e0;
+
+}
+
+.collage {
+    width: 30vw;
+    height: 50vw;
+    position: absolute;
+    left: 0;
+    animation-timing-function: ease-out; 
+    animation: collage 2s infinite;
+    }
+      
+      @keyframes collage {
+        0% { 
+        }
+      
+        100% {
+          width: 50vw;
+          height: 70vw;
+        }
+      }
+
+.collage2 {
+    width: 40vw;
+    height: 30vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    animation: collage2 2s infinite;
+    }
+      
+      @keyframes collage2 {
+        0% { 
+        }
+      
+        100% {
+          width: 30vw;
+          height: 60vw;
+        }
+      }
+
+.grid {
+display: flex;
+flex-direction: row;
+margin-top: 25px;
+margin-bottom: 25px;
+z-index: 100;
+justify-content: space-evenly; 
+}
+
+.rec {
+width: 20px;
+height: 3px;
+background-color: blue;
+border: 2px; 
+animation-timing-function: ease-out; 
+animation: circle 2s infinite;
+}
+  
+  @keyframes circle {
+    0% { 
+    }
+  
+    100% {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+    }
+  }
+
+
+.rec2 {
+width: 20px;
+height: 3px;
+background-color: red;
+z-index: 100;
+transform: rotate(45deg);
+}
+
+.rec3 {
+transform: rotate(-45deg);
+}
+
+
+.circlegrid {
+    position: absolute;
+    margin-top: 80vh;
+    margin-left: 20vw;
+    width: 80vw;
+    height: 40vh;
+}
+
+.circlegrid1 {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5vh;
+    margin-bottom: 2vh;
+    z-index: 100;
+    justify-content: space-evenly; 
+  }
+
+
+.circlegrid2 {
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 18vw;
+    width: 40vw;
+    height: 60vh;
+    transform: rotate(90deg);
+    animation: circlegrid2 3s infinite;
+    }
+      
+      @keyframes circlegrid2 {
+        0% { 
+        }
+      
+        100% {
+          width: 80vw;
+          height: 30vw;
+        }
+      }
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.square1 {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-left: 15vw;
+    margin-top: 5vh;
+    position: absolute;
+}
+  
+.squ1 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 80vw;
+    top: 10vh;
+    z-index: 100;
+}
+
+.squ2 {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: 70vw;
+    top: 13vh;
+}
+
+.squ3 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 86vw;
+    top: 39vh;
+}
+
+.squ4 {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    left: 20vw;
+    top: 70vh;
+}
+
+.squ5 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 46vw;
+    top: 50vh;
+}
+
+.squ6 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    left: 0vw;
+    top: 50vh;
+}
+
+.squ7 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 60vw;
+    top: 40vh;
+}
+
+.squ8 {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    left: 60vw;
+    top: 90vh;
+}
+
+.squ9 {
+    width: 180px;
+    height: 180px;
+    background-color: yellow;
+    position: absolute;
+    left: 50vw;
+    top: 75vh;
+}
+
+.squ10 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: absolute;
+    left: 40vw;
+    top: 10vh;
+}
+
+.squ11 {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: absolute;
+    left: 7vw;
+    top: 80vh;
+}
+
+.squ12 {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    left: 90vw;
+    top: 60vh;
+}
+
+.squ13 {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    left: 90vw;
+    top: 90vh;
+}
+
+.squ14 {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 30vw;
+    top: 56vh;
+}
+
+.squ15 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    left: 38vw;
+    top: 95vh;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25vw solid transparent;
+    border-right: 25vw solid transparent;
+    border-bottom: 50vw solid red;
+    margin-left: 70vw;
+    margin-top: 30vh;
+    position: absolute;
+  }
