@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<head>
+    <title> project 6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="assets/js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lato" rel="stylesheet">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    
+
+
+</head>
+
+
+<body>
+
+
+    <div class="navigation">
+
+            <div class="navdate">
+
+                <div class="mapicon">
+                    <img src="assets/img/mapicon-01.png" style="width:50px">
+                </div>
+              
+                <div class="button" data-day="feb19"> feb 19 </div>
+                <div class="button" data-day="feb20" > feb 20 </div>   
+                <div class="button" data-day="feb21"> feb 21 </div>
+                <div class="button" data-day="feb26"> feb 26 </div>
+                <div class="button" data-day="feb27"> feb 27 </div>
+                <div class="button" data-day="mar07"> mar 07 </div> 
+                <div class="button" data-day="mar11"> mar 11 </div> 
+                <div class="button" data-day="mar12"> mar 12 </div> 
+                <div class="button" data-day="mar13"> mar 13 </div> 
+                <div class="button" data-day="mar14"> mar 14 </div> 
+                <div class="button" data-day="mar20"> mar 20 </div> 
+                <div class="button" data-day="mar25"> mar 25 </div> 
+                <div class="button" data-day="mar26"> mar 26 </div> 
+                <div class="button" data-day="mar27"> mar 27 </div> 
+                <div class="button" data-day="mar28"> mar 28 </div> 
+                <div class="button" data-day="apr1"> apr 01</div> 
+                <div class="button" data-day="apr2"> apr 02</div> 
+                <div class="button" data-day="apr6"> apr 06</div> 
+                <div class="button" data-day="apr10"> apr 10</div> 
+                <div class="button" data-day="apr11"> apr 11</div> 
+                <div class="button" data-day="apr12"> apr 12</div> 
+                <div class="button" data-day="apr14"> apr 14</div> 
+                <div class="button" data-day="apr15"> apr 15</div> 
+                <div class="button" data-day="apr16"> apr 16</div> 
+                <div class="button" data-day="apr17"> apr 17</div> 
+                <div class="button" data-day="apr18"> apr 20</div> 
+                <div class="button" data-day="apr22"> apr 22</div> 
+                <div class="button" data-day="apr24"> apr 24</div> 
+                <div class="button" data-day="apr25"> apr 25</div> 
+            </div>
+
+    </div>
+
+
+    <div class="info">
+
+        <div class="hidden" id="map" style='width: 90vw; height: 100vh;'></div>
+
+
+    <div class="day hidden" id="feb19">
+
+        <div class="objdescript">
+
+            <div id="object">
+                    <div id="time">11:55 AM </div>
+                    <div class="whiterec">
+                    <div id="place">Melt Shop </div>
+                        <img src="assets/img/meltshop.jpg">
+                        <div id="food">
+                            Truffle Melt with Fried Chicken
+                            <br>Tots
+                            <br>Truffle Mayo
+                        </div>
+                        <div id="price">$16.18</div> 
+                    </div>
+
+            </div> 
+
+            <div id="object">
+                <div id="time">12:54 PM </div>
+                <div class="whiterec">
+                <div id="place"> Dunkin Donuts</div>
+                <img src="assets/img/dunkin.png">
+                <div id="food">
+                    Ice Latte Medium
+                    <br>3 Caramel Swirl
+                </div>
+                <div id="price">$5.54</div>
+                </div>
+            </div> 
+
+            <div id="object">
+                <div id="time"> 6:01 PM </div>
+                <div class="whiterec">
+                <div id="place"> Dunkin Donuts</div>
+                <img src="assets/img/dunkin.png">
+                <div id="food">
+                    Ice Latte Small
+                    <br>2 Caramel Swirl
+                </div>
+                <div id="price">$4.78</div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+   
+    <div class="day hidden" id="feb20">
+
+        <div class="objdescript">
+            <div id="object">
+                <div id="time"> 2:14 PM </div>
+                <div class="whiterec">
+                <div id="place"> Dunkin Donuts</div>
+                <img src="assets/img/munchkins.jpg">
+                <div id="food">
+                    20 Munchkins
+                    
+                </div>
+                <div id="price">$4.00</div>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+    <div class="day hidden" id="feb21">
+
+        <div class="objdescript">
+
+                <div id="object">
+                        <div id="time">11:57 AM  </div>
+                        <div class="whiterec">
+                        <div id="place">ENNJU </div>
+                        <img src="assets/img/meltshop.jpg">
+                        <div id="food">
+                                Gyu-Don
+                        </div>
+                        <div id="price">$14.00</div>
+                        </div>
+                </div> 
+    
+                <div id="object">
+                    <div id="time">3:02 PM </div>
+                    <div class="whiterec">
+                    <div id="place"> Dunkin Donuts</div>
+                    <img src="assets/img/dunkin.png">
+                    <div id="food">
+                        Ice Latte Medium
+                        <br>3 Caramel Swirl
+                    </div>
+                    <div id="price">$5.54</div>
+                    </div>
+                </div> 
+    
+                <div id="object">
+                    <div id="time" >8:56 PM </div>
+                    <div class="whiterec">
+                        <div id="place"> Teazzi Tea Shop</div>
+                        <img src="assets/img/dunkin.png">
+                        <div id="food">
+                                Wintermelon Tea Latte 
+                                <br>with Tapioca 
+                                <br>70% ice
+                        </div>
+                        <div id="price">$5.99</div>
+                    </div>
+
+                </div> 
+            </div>
+
+    </div>
+
+    <div class="day hidden" id="feb26">
+
+            <div class="objdescript">
+                
+                <div id="object">
+                    <div id="time"> 10:48 PM </div>
+                    <div class="whiterec">
+                    <div id="place"> Jollibee </div>
+                    <img src="assets/img/ennju_gyudon.jpg">
+                    <div id="food">
+                        1 pc Chicken Joy 
+                        <br>with Jollibee Spaghetti 
+                        <br> Pineapple Quencher
+                        
+                    </div>
+                    <div id="price">$9.24</div>
+                    </div>
+                </div> 
+            </div>
+
+    </div> 
+
+    <div class="day hidden" id="feb27">
+
+            <div class="objdescript">
+                
+                    <div id="object">
+                        <div id="time"> 5:39 PM </div>
+                        <div class="whiterec">
+                        <div id="place"> Tim Ho Wan </div>
+                        <img src="assets/img/ennju_gyudon.jpg">
+                        <div id="food">
+                            BBQ Bun
+                            <br>Beef RIce
+                            <br> Caramel TOast
+                        </div>
+                        <div id="price">$18.73 </div>
+                        </div>
+                    </div> 
+    
+            </div>
+
+    </div> 
+
+    <div class="day hidden" id="mar7">
+
+            <div class="objdescript">
+                
+                <div id="object">
+                    <div id="time"> 3:23 PM </div>
+                    <div class="whiterec">
+                    <div id="place"> Dunkin Donuts </div>
+                    <img src="assets/img/ennju_gyudon.jpg">
+                    <div id="food">
+                        Medium Caramel Macchiato
+                        <br> 5 Munchkins 
+                    </div>
+                    <div id="price">$6.91</div>
+                    </div>
+                </div> 
+
+                <div id="object">
+                    <div id="time"> 8:49 PM </div>
+                    <div class="whiterec">
+                    <div id="place"> Teazzi </div>
+                    <img src="assets/img/ennju_gyudon.jpg">
+                    <div id="food">
+                        Wintermelon Tea Latte
+                    </div>
+                    <div id="price">$5.99</div>
+                    </div>
+                </div> 
+    
+            </div>
+    </div> 
+
+
+    <div class="day hidden" id="mar11">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                            <div id="time"> 7:55 PM </div>
+                            <div class="whiterec">
+                                <div id="place"> Teazzi </div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    Wintermelon Tea Latte
+                                    <br>Tots
+                                    <br>Truffle Mayo
+                                </div>
+                                <div id="price">$16.18</div>
+                                </div>
+                            </div> 
+        
+                    <div id="object">
+                        <div id="time">12:54 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/dunkin.png">
+                            <div id="food">
+                                Ice Latte Medium
+                                <br>3 Caramel Swirl
+                            </div>
+                            <div id="price">$5.54</div>
+                        </div>
+                    </div> 
+        
+                    <div id="object">
+                        <div id="time"> 6:01 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/dunkin.png">
+                            <div id="food">
+                                Ice Latte Small
+                                <br>2 Caramel Swirl
+                            </div>
+                            <div id="price">$4.78</div>
+                        </div>
+                    </div> 
+            </div>
+
+    </div>
+
+    <div class="day hidden" id="mar12">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 4:32 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Medium Iced Latte
+                                <br>with 2 pumps of Caramel
+                                <br>Whole Milk
+                                <br>2 donuts
+                            </div>
+                            <div id="price">$8.52</div>
+                        </div>
+                    </div>
+            </div> 
+
+    </div>
+
+    <div class="day hidden" id="mar13">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 3:55 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Melt Shop </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Burger Melt
+                                <br>Tots
+                                <br>1 Truffle Mayo
+                            </div>
+                            <div id="price">$14.99</div>
+                        </div>
+                    </div>
+            </div> 
+
+    </div>
+
+    <div class="day hidden" id="mar14">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 2:09 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> La Lanterna Di Vittorio & Bar Next Door </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Pesto Lasagna
+                                <br>Tiramisu 
+                            </div>
+                            <div id="price">$29.50</div>
+                        </div>
+                    </div>
+            </div> 
+
+    </div>
+
+
+    <div class="day hidden" id="mar20">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 7:22 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> KATI </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Pad Thai
+                            </div>
+                            <div id="price">$16.27</div>
+                        </div>
+                    </div>
+
+                    <div id="object">
+                        <div id="time"> 9:06 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Gong Cha </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Wintermelon with Tapioca
+                            </div>
+                            <div id="price">$4.90</div>
+                        </div>
+                    </div>
+            </div> 
+    </div>
+
+    <div class="day hidden" id="mar25">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 4:00 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Cafe Mocha</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Pasta
+                            </div>
+                            <div id="price">$24.89</div>
+                        </div>
+                    </div>
+
+            </div> 
+    </div>
+
+    <div class="day hidden" id="mar26">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 6:01 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Panera</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Turkey Apple Cheddar Sandwich 
+                                <br>
+                            </div>
+                            <div id="price">$8.92</div>
+                        </div>
+                    </div>
+
+            </div> 
+    </div>
+
+    <div class="day hidden" id="mar27">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 10:15 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Turkey Sausage Egg Breakfast Sandwich
+                                <br>
+                            </div>
+                            <div id="price">$6.51</div>
+                        </div>
+                    </div>
+
+                    <div id="object">
+                            <div id="time"> 5:53 PM </div>
+                            <div class="whiterec">
+                                <div id="place"> La Lanterna Di Vittorio & Bar Next Door</div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    Pesto Pasta
+                                    <br> Tiramisu
+                                </div>
+                                <div id="price">$22.91</div>
+                            </div>
+                        </div>
+
+                    <div id="object">
+                            <div id="time"> 6:26 AM </div>
+                            <div class="whiterec">
+                                <div id="place"> Teazzi </div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    Wintermelon Tea Latte
+                                    <br> Tapioca
+                                </div>
+                                <div id="price">$5.50</div>
+                            </div>
+                        </div>
+
+            </div> 
+    </div>
+
+    <div class="day hidden" id="mar28">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 12:10 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> ENNJU </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Gyu Don
+                                <br>
+                            </div>
+                            <div id="price">$18.57 </div>
+                        </div>
+                    </div>
+
+                    <div id="object">
+                            <div id="time"> 1:14 PM </div>
+                            <div class="whiterec">
+                                <div id="place"> Gong Cha </div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    Medium Black Coffee
+                                    <br>Pearl 
+                                </div>
+                                <div id="price">$4.90 </div>
+                            </div>
+                        </div>
+
+                    <div id="object">
+                            <div id="time"> 6:24 PM</div>
+                            <div class="whiterec">
+                                <div id="place"> Teazzi </div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    Wintermelon Tea Latte
+                                    <br>
+                                </div>
+                                <div id="price">$5.50 </div>
+                            </div>
+                    </div>
+
+            </div> 
+    </div>
+
+    <div class="day hidden" id="apr1">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 3:03 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Sandwicherie</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Union Square Sandwicherie
+                            </div>
+                            <div id="price">$11.92</div>
+                        </div>
+                    </div>
+            </div> 
+
+    </div>
+
+    <div class="day hidden" id="apr2">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 5:11 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Luxamor</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Cheese Jasmine Green Tea
+                            </div>
+                            <div id="price">$5.39</div>
+                        </div>
+                    </div>
+            </div> 
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 6:02 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> McDonalds</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Small French Fries
+                                <br>10 McNuggets
+                                <br>Tangy Honey Mustard
+                            </div>
+                            <div id="price">$7.49</div>
+                        </div>
+                    </div>
+            </div> 
+
+    </div>
+
+    <div class="day hidden" id="apr3">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 11:54 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Medium Iced Blueberry Crisp Latte
+                                <br>1 Donut
+                            </div>
+                            <div id="price">$7.36</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr6">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 3:12 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Two Little Red Hens</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Apple Classic Pie Slice
+                                <br>NY Cheesecake Slice
+                                <br>Carrot Cupcake
+                                <br>Chocolate Crinkle
+                            </div>
+                            <div id="price">$15.30</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr10">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 11:56 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                    Medium Iced French Vanilla Latte
+                            </div>
+                            <div id="price">$5.54</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr11">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 11:56 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                    Medium Iced French Vanilla Latte
+                            </div>
+                            <div id="price">$5.54</div>
+                        </div>
+                    </div>
+
+            <div id="object">
+                
+                <div id="time"> 8:31 PM </div>
+                    <div class="whiterec">
+                        <div id="place"> ENNJU </div>
+                        <img src="assets/img/meltshop.jpg">
+                        <div id="food">
+                                Karaage
+                        </div>
+                        <div id="price">$14.70</div>
+                    </div>
+                </div>
+
+            </div>  
+
+            
+
+    </div>
+
+
+    <div class="day hidden" id="apr12">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 4:24 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> McDonalds </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                20 McDuggets
+                                <br>3 BBQ Sauce
+                                <br>2 Medium French Fries
+                            </div>
+                            <div id="price">$13.79</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr14">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 4:23 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> OUTRO </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Pesto Bacon Pasta
+                            </div>
+                            <div id="price">$14.15</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr15">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 5:58 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts </div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                1 Donuts
+                                <br>Medium Iced Cappucino 
+                                <br> 2 French Vanilla Swirl
+                                <br>Whole Milk
+                            </div>
+                            <div id="price">$6.38</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr16">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 12:22 PM </div>
+                        <div class="whiterec">
+                            <div id="place"> Gong Cha</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Medium Black Coffee 
+                                <br>Milk Foam
+                                <br> Tapioca
+                            </div>
+                            <div id="price">$4.41</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr17">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 10:53 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Sausage Egg Croissant
+                            </div>
+                            <div id="price">$5.54</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+
+    <div class="day hidden" id="apr20">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 10:01 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> CVS</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Tropicana Watermelon
+                            </div>
+                            <div id="price">$2.17</div>
+                        </div>
+                    </div>
+            </div>  
+
+    </div>
+
+    <div class="day hidden" id="apr22">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 11:16 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Medium Iced 
+                                <br> 3 French Vanilla Swirl
+                            </div>
+                            <div id="price">$6.38 </div>
+                        </div>
+                    </div>
+
+                    <div id="object">
+                            <div id="time"> 3:10 PM </div>
+                            <div class="whiterec">
+                                <div id="place"> Jollibee</div>
+                                <img src="assets/img/meltshop.jpg">
+                                <div id="food">
+                                    2 pc Chicken Joy
+                                    <br> Adobo Rice
+                                    <br>Jolly Crispy Fries
+                                    <br> Pineapple Quencher
+                                </div>
+                                <div id="price">$10.65 </div>
+                            </div>
+                        </div>
+            </div>  
+
+
+    </div>
+
+    <div class="day hidden" id="apr24">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 11:49 AM </div>
+                        <div class="whiterec">
+                            <div id="place"> Dunkin Donuts</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                Medium Iced Cappucino 
+                                <br>French Vanilla
+                                <br>6 pc Hash Brown
+                           
+                            </div>
+                            <div id="price">$6.18 </div>
+                        </div>
+                    </div>
+            </div>  
+
+
+    </div>
+
+
+    <div class="day hidden" id="apr25">
+
+            <div class="objdescript">
+
+                    <div id="object">
+                        <div id="time"> 12:16 PM</div>
+                        <div class="whiterec">
+                            <div id="place"> Eataly</div>
+                            <img src="assets/img/meltshop.jpg">
+                            <div id="food">
+                                    Margherita Pizza
+                           
+                            </div>
+                            <div id="price">$18.00 </div>
+                        </div>
+                    </div>
+            </div>  
+
+
+    </div>
+
+
+
+
+</div>  
+
+   </body>
+</html>
