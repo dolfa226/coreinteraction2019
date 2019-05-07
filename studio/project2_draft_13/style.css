@@ -208,3 +208,98 @@ z-index: 2;
     }
   }
 
+
+@media screen and (max-width: 375px) {
+
+  body {
+    left: -100px;
+    top: 0;
+    transform: rotate(20deg);
+    height: 667px;
+    width: 375px;
+    overflow: hidden;
+  }
+  @keyframes rec1{
+    0% { 
+   
+    }
+  
+    10% {
+      width: 5px;
+      height: 2px;
+    }
+  
+    40% {
+      /* border-radius: 50%; */
+      width: 5px;
+      height: 10px;
+    }
+  
+    45% {
+      width: 10px;
+      height: 5px;
+  
+    }
+  
+    50% {
+      /* border-radius: 0%; */
+      width: 50vw;
+      height: 10px;
+    }
+  
+    100% {
+      width: 100vw;
+      height: 5px;
+
+    }
+  }
+
+  .rec1 {
+    width: 10px;
+    height: 10px;
+    }
+
+  @keyframes rec1{
+    0% { 
+   
+    }
+  
+    10% {
+      transform: rotate(90deg);
+      width: 10px;
+      height: 10px;
+      background-color: #4286f4;
+      border-radius: 0%;
+    }
+  
+    40% {
+      width: 10px;
+      height: 10px;
+      transform: rotate(180deg);
+      background-color: #81b6c1;
+    }
+  
+    45% {
+      width: 10px;
+      height: 10px;
+      transform: rotate(180deg);
+      background-color: #9fc4cc;
+  
+    }
+  
+    50% {
+      width: 99vw;
+      height: 10px;
+      transform: rotate(180deg);
+    }
+  
+    100% {
+      width: 300vw;
+      height: 5px;
+      padding: 10px;
+      left: 100px;
+    }
+  }
+
+
+}

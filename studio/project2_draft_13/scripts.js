@@ -35,19 +35,20 @@ $(document).ready(function() {
     },100)
 
     var colors1 = ["#CE8054", "#B35340", "#6F3637", "#23342" ];
-    var colors2 = ["#CE8054", "#B35340", "#6F3637", "#23342" ];
+    var colors2 = ["black", "red", "blue", "yellow" ];
     var colors3 = ["#CE8054", "#B35340", "#6F3637", "#23342" ];
         
         var randomColors1 = colors1[Math.floor(Math.random()*colors1.length)];
         var randomColors2 = colors2[Math.floor(Math.random()*colors2.length)];
         var randomColors3 = colors3[Math.floor(Math.random()*colors3.length)];
-        var randomRotate = 'rotate(' + Math.random() * 20 + 'deg)';
+        var randomRotate = 'rotate(' + Math.random() * 40 + 'deg)';
+        var randomSkew = 'skew(' + Math.random() * 30 + 'deg)';
         
         $('.white').css('background-color', randomColors1)
         $('body').css('background-color', randomColors2)
         $('.rec2').css('background-color', randomColors3)
         $('body').css('transform', randomRotate)
-        
+        $('.rec2').css('transform', randomSkew)
     })
 
         
@@ -91,6 +92,11 @@ $(document).ready(function() {
     randomStuff();
     
     },10)
+    if($(".rec2").length > 100 ){
+    
+        $('.rec2').last().remove();
+    
+    }
     
     
     // end document ready function
@@ -139,12 +145,15 @@ $(document).ready(function() {
 
     $(document).ready(function(){
 
-        var shapes =  $(".layer2rec1") 
+        var shapes =  $(".layer2rec1");   
+        var width = doc.width() - 100;
+        var height = doc.height() - 100;
     
         //create a random shape and position it randomly
         function randomStuff(){
         var randomShape = shapes
         var clone = randomShape.clone().appendTo('body');
+        
         
         clone.last().css('left', Math.random()* width )
         clone.last().css('top', Math.random()* height )
