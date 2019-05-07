@@ -215,9 +215,10 @@ z-index: 2;
     left: -100px;
     top: 0;
     transform: rotate(20deg);
-    height: 667px;
+    height: 100%;
     width: 375px;
     overflow: hidden;
+    position: fixed;
   }
   @keyframes rec1{
     0% { 
