@@ -4,23 +4,21 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-color: black;
 }
 
 .rec1 {
-width: 10px;
+width: 110vw;
 height: 10px;
 background-color: white;
 border: 2px; 
-transition: ease-in-out; 
-animation: rec1 6s infinite;
+transition: ease-out 2s; 
+animation: rec1 8s infinite;
 margin-top: -20px;
-margin-right: 10px;
+margin-right: 100px;
 padding: 10px;
 float: right;
-/* border-radius: 50%; */
-transform: rotate(45deg);
 z-index: 2;
-/* overflow: hidden; */
 }
 
 @keyframes rec1{
@@ -31,7 +29,6 @@ z-index: 2;
   10% {
     transform: rotate(90deg);
     width: 20px;
-    height: 10px;
     background-color: #4286f4;
     border-radius: 0%;
   }
@@ -39,14 +36,14 @@ z-index: 2;
   40% {
     /* border-radius: 50%; */
     width: 20px;
-    height: 20px;
+
     transform: rotate(180deg);
     background-color: #81b6c1;
   }
 
   45% {
-    width: 20px;
-    height: 20px;
+    width: 1000px;
+
     transform: rotate(180deg);
     background-color: #9fc4cc;
 
@@ -61,24 +58,29 @@ z-index: 2;
 
   }
 
+  75% {
+    /* border-radius: 0%; */
+    width: 200vw;
+
+
+  }
+
   100% {
     /* border-radius: 50%; */
-    width: 300vw;
-    height: 5px;
-    /* transform: rotate(180deg); */
+    width: 0vw;
+    height: 0px;
     padding: 10px;
     background-color: #d2dfe0;
-    left: 100px;
   }
+
 }
 
 .white {
   width: 10px;
   height: 10px;
-  /* background-color: white; */
   border: 2px; 
   transition: ease-in-out; 
-  animation: white 6s ;
+  animation: white 8s infinite;
   margin-top: 10px;
   padding: 10px;
   transform: rotate(45deg);
@@ -92,40 +94,27 @@ z-index: 2;
     }
   
     10% {
-      transform: rotate(90deg);
+      transform: rotate(-90deg);
       width: 20px;
       height: 10px;
       /* background-color: red; */
       /* border-radius: 0%; */
     }
-  
-    45% {
-      /* border-radius: 50%; */
-      width: 20px;
-      height: 20px;
-      /* background-color: black; */
-      transform: rotate(180deg);
-      /* background-color: red; */
-  
-    }
+
   
     50% {
       /* border-radius: 0%; */
       width: 99vw;
-      height: 50px;
+      height: 30px;
       /* background-color: black; */
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
       /* background-color: red; */
   
     }
   
     100% {
-      /* border-radius: 50%; */
-      width: 300vw;
-      transform: rotate(180deg);
+      width: 100vw;
       padding: 10px;
-      /* background-color: white; */
-      right: -100px;
     }
   }
 
@@ -135,9 +124,9 @@ z-index: 2;
   /* background-color: black; */
   border: 2px; 
   animation-timing-function: ease-in-out; 
-  animation: rec2 3s infinite;
+  animation: rec2 8s infinite;
   margin-top: 5px;
-  margin-left: -10vw;
+  left: -30vw;
   border-radius: 50%;
   z-index: 2;
 }
@@ -152,155 +141,23 @@ z-index: 2;
       height: 20px;
     }
   }
-  
-  .layer2rec1 {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border: 2px; 
-  transition: ease-in-out; 
-  animation: layer2 8s infinite;
-  margin-top: 10px;
-  margin-left: 10px;
-  /* border-radius: 50%; */
-  transform: rotate(45deg) perspective(80deg);
-  z-index: 3;
-  /* overflow: hidden; */
-  }
-  
-  @keyframes layer2 {
-    0% { 
-    }
-  
-    10% {
-      transform: rotate(90deg);
-      width: 20px;
-      height: 10px;
-      background-color: #CE8054;
-      border-radius: 0%;
-    }
-  
-    40% {
-      /* border-radius: 50%; */
-      width: 20px;
-      height: 20px;
-      transform: rotate(180deg);
-      background-color: #B35340;
-  
-    }
-  
-    50% {
-      /* border-radius: 0%; */
-      width: 90vw;
-      height: 50px;
-      transform: rotate(180deg);
-      background-color: #6F3637;
-  
-    }
-  
-    90% {
-      /* border-radius: 50%; */
-      width: 100px;
-      height: 100px;
-      transform: rotate(180deg);
-      padding: 10px;
-      background-color: #4286f4;
-    }
-  }
 
 
-@media screen and (max-width: 375px) {
+  
+
+@media screen and (max-height: 812px) {
 
   body {
-    left: -100px;
+    left: 0px;
     top: 0;
-    transform: rotate(20deg);
     height: 100%;
     width: 375px;
     overflow: hidden;
     position: fixed;
   }
-  @keyframes rec1{
-    0% { 
-   
-    }
-  
-    10% {
-      width: 5px;
-      height: 2px;
-    }
-  
-    40% {
-      /* border-radius: 50%; */
-      width: 5px;
-      height: 10px;
-    }
-  
-    45% {
-      width: 10px;
-      height: 5px;
-  
-    }
-  
-    50% {
-      /* border-radius: 0%; */
-      width: 50vw;
-      height: 10px;
-    }
-  
-    100% {
-      width: 100vw;
-      height: 5px;
-
-    }
-  }
 
   .rec1 {
-    width: 10px;
-    height: 10px;
-    }
-
-  @keyframes rec1{
-    0% { 
-   
-    }
-  
-    10% {
-      transform: rotate(90deg);
-      width: 10px;
-      height: 10px;
-      background-color: #4286f4;
-      border-radius: 0%;
-    }
-  
-    40% {
-      width: 10px;
-      height: 10px;
-      transform: rotate(180deg);
-      background-color: #81b6c1;
-    }
-  
-    45% {
-      width: 10px;
-      height: 10px;
-      transform: rotate(180deg);
-      background-color: #9fc4cc;
-  
-    }
-  
-    50% {
-      width: 99vw;
-      height: 10px;
-      transform: rotate(180deg);
-    }
-  
-    100% {
-      width: 300vw;
-      height: 5px;
-      padding: 10px;
-      left: 100px;
-    }
+    width: 110vw;
   }
-
 
 }
