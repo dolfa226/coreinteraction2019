@@ -31,8 +31,8 @@ $(document).ready(function(){
 	var map = new mapboxgl.Map({
 		container: "map",
 		style: "mapbox://styles/airadolfo/cjubxx09708iq1fn7v82bu33n",
-		zoom: 13.5,
-		center: [-73.993257, 40.733138]
+		zoom: 12.3,
+		center: [-73.9896298, 40.7410861]
 	});
 
 	map.on('load', function() {
@@ -52,13 +52,13 @@ $(document).ready(function(){
 
 						"type": "Feature",
 						"properties": {
-							"description": "<strong>Melt Shop</strong> <br>16.18</p>",
+							"description": "Melt Shop</strong> <br><br> <i> Feb 19 </i> $16.18 <br><br> <i> Mar 13 </i> $14.99</p>",
 							"icon": "marker",
 						},
 
 						"geometry": {
 							"type": "Point",
-							"coordinates": [-73.989632, 40.733742] //not appearing
+							"coordinates": [-73.989632, 40.733742]
 						}
 					}, {
 						
@@ -276,18 +276,6 @@ $(document).ready(function(){
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong> Tim Ho Wan Tim </strong> <br>$21.83</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.989907, 40.731494]
-						}
-
-
-					}, {
-						"type": "Feature",
-						"properties": {
 							"description": "<strong> Cafe Mocha </strong> <br>$23.00</p>",
 							"icon": "marker"
 						},
@@ -296,8 +284,116 @@ $(document).ready(function(){
 							"coordinates": [-73.987849, 40.727739]
 						}
 
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Dunkin Donuts </strong> <br>$23.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.994290, 40.736279]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Eataly</strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9895802, 40.742213]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Jollibee </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9911233, 40.7557433]
+						}
 
 
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Two Little Red Hens </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9517691, 40.7775092]
+						}
+						
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> La Lanterna </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-74.003541, 40.7264452]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Gong Cha </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.986259, 40.733197]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Teazzi </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.99584, 40.7371531]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Sandwicherie </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.9901007, 40.731615]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> McDonalds</strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.9967494, 40.7378693]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> McDonalds</strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.9937164, 40.7355642]
+						}
 
 
 
