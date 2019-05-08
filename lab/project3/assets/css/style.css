@@ -200,7 +200,8 @@ li {
   font-size: 35px;
   text-align: center;
   background-color: yellow;
-  width: 150px;
+  padding: 5px;
+  width: 125px;
   left: 10px;
 }
 
