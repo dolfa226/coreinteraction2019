@@ -1,106 +1,72 @@
-window.addEventListener('load', function() {
+$(document).ready(function(){
+	
+	$(".mapicon").click(function(){
+		$(".day").hide();
+		$(".button").removeClass("active");
+
+	});
+
+	$(".button").click(function(){
+	
+		var day = $(this).data('day'); 
+		console.log("#"+day);
+		$(".day#" + day).toggle("slide");
+		
+		console.log($(".day:not(#" + day + ")"));
+		$(".day:not(#" + day + ")").hide();
+
+		$(this).toggleClass("active");
+		$(".button").not(this).removeClass("active");
+
+	});
+
+  });
+
+
+  window.addEventListener('load', function() {
 
 	mapboxgl.accessToken = "pk.eyJ1IjoiYWlyYWRvbGZvIiwiYSI6ImNqdHlnMHk1NjJrYjY0NXBpZW0yOWM4bDEifQ.Z8lJSiAW94_WcK2jm9nkiQ";
 
 	/* Map: This represents the map on the page. */
 	var map = new mapboxgl.Map({
 		container: "map",
-		style: "mapbox://styles/mapbox/light-v10",
-		zoom: 13.5,
-		center: [-73.993257, 40.733138]
+		style: "mapbox://styles/airadolfo/cjubxx09708iq1fn7v82bu33n",
+		zoom: 12.3,
+		center: [-73.9896298, 40.7410861]
 	});
 
 	map.on('load', function() {
 		// Add a layer showing the places.
 		map.addLayer({
 			"id": "places",
-			"type": "symbol",
+			"type": "circle",
+			"paint": {
+				"circle-radius": 4.5,
+				"circle-color": '#666f7f' 
+			  },
 			"source": {
 				"type": "geojson",
 				"data": {
 					"type": "FeatureCollection",
 					"features": [{
+
 						"type": "Feature",
 						"properties": {
-							"description": "<strong>Argo Tea</strong> <br>5.39</p>",
+							"description": "Melt Shop</strong> <br> $31.17 ",
 							"icon": "marker",
 						},
 
 						"geometry": {
 							"type": "Point",
-							"coordinates": [-73.993257, 40.733138]
+							"coordinates": [-73.989632, 40.733742]
 						}
 					}, {
-
-						"type": "Feature",
-						"properties": {
-							"description": "<strong>Amorino</strong> <br>$6.59</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.993866, 40.732887]
-						}
-					}, {
-
-						"type": "Feature",
-						"properties": {
-							"description": "<strong>Sweet Green</strong> <br>$13.88</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.992456, 40.734057]
-						}
+					
 
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong>Starbucks</strong> <br>$13.88</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.991084, 40.736239]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong>Joe's Coffee</strong> <br>$4.50</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.993309, 40.735088]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> O Cafe</strong> <br>$4.00</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.997789, 40.735884]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Merci Market</strong> <br>$2.65</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.993967, 40.735031]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Panera</strong> <br>$8.26</p>",
+							"description": "<strong> Panera</strong> <br>$8.92</p>",
 							"icon": "marker"
 						},
 						"geometry": {
@@ -108,38 +74,16 @@ window.addEventListener('load', function() {
 							"coordinates": [-73.989788, 40.734864]
 						}
 
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Boba Guys</strong> <br>$5.44</p>",
-							"icon": "marker",
-
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.994156, 40.730137]
-						}
 
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong> Ennju</strong> <br>$14.15</p>",
+							"description": "<strong> Ennju</strong> <br>$47.27</p>",
 							"icon": "marker"
 						},
 						"geometry": {
 							"type": "Point",
 							"coordinates": [-73.991175, 40.737355]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Pret A Manger</strong> <br>$3.26</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.991257, 40.733409]
 						}
 
 					}, {
@@ -153,39 +97,6 @@ window.addEventListener('load', function() {
 							"coordinates": [-74.000854, 40.728832]
 						}
 
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Murray's Bagels</strong> <br>$4.63</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.998585, 40.744781]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Space194</strong> <br>$7.07</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.983422, 40.729747]
-						}
-
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> S'MAC East Village</strong> <br>$8.98</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.983649, 40.730168]
-						}
 
 					}, {
 						"type": "Feature",
@@ -198,32 +109,11 @@ window.addEventListener('load', function() {
 							"coordinates": [-74.007706, 40.730168]
 						}
 
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Tortaria </strong> <br>$23.50</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.823161, 42.677058]
-						}
 
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong> Pressed Juicery </strong> <br>$6.00</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.992508, 40.735794]
-						}
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Outro </strong> <br>$5.44</p>",
+							"description": "<strong> Outro </strong> <br>$14.15</p>",
 							"icon": "marker"
 						},
 						"geometry": {
@@ -234,7 +124,7 @@ window.addEventListener('load', function() {
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong> Tim Ho Wan Tim </strong> <br>$21.83</p>",
+							"description": "<strong> Tim Ho Wan Tim </strong> <br>$18.73</p>",
 							"icon": "marker"
 						},
 						"geometry": {
@@ -245,19 +135,7 @@ window.addEventListener('load', function() {
 					}, {
 						"type": "Feature",
 						"properties": {
-							"description": "<strong> Tim Ho Wan Tim </strong> <br>$21.83</p>",
-							"icon": "marker"
-						},
-						"geometry": {
-							"type": "Point",
-							"coordinates": [-73.989907, 40.731494]
-						}
-
-
-					}, {
-						"type": "Feature",
-						"properties": {
-							"description": "<strong> Cafe Mocha </strong> <br>$23.00</p>",
+							"description": "<strong> Cafe Mocha </strong> <br>$24.89</p>",
 							"icon": "marker"
 						},
 						"geometry": {
@@ -265,8 +143,117 @@ window.addEventListener('load', function() {
 							"coordinates": [-73.987849, 40.727739]
 						}
 
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Dunkin Donuts </strong> <br>$79.18</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.994290, 40.736279]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Eataly</strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9895802, 40.742213]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Jollibee </strong> <br>$19.89</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9911233, 40.7557433]
+						}
 
 
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Two Little Red Hens </strong> <br>$15.30</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.9517691, 40.7775092]
+						}
+						
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> La Lanterna </strong> <br>$18.00</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-74.003541, 40.7264452]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Gong Cha </strong> <br>$14.21</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [-73.986259, 40.733197]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Teazzi </strong> <br>$22.98</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.99584, 40.7371531]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Sandwicherie </strong> <br>$11.92</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.9901007, 40.731615]
+						}
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> McDonalds</strong> <br>$21.28</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.9967494, 40.7378693]
+						}
+
+
+					}, {
+						"type": "Feature",
+						"properties": {
+							"description": "<strong> Ootoya </strong> <br>$82.74</p>",
+							"icon": "marker"
+						},
+						"geometry": {
+							"type": "Point",
+							"coordinates": [ -73.992794, 40.733446 ]
+						}
 
 
 
@@ -276,10 +263,7 @@ window.addEventListener('load', function() {
 					}]
 				}
 			},
-			"layout": {
-				"icon-image": "{icon}-15",
-				"icon-allow-overlap": true
-			}
+
 		});
 
 		// When a click event occurs on a feature in the places layer, open a popup at the
@@ -313,24 +297,16 @@ window.addEventListener('load', function() {
 	});
 
 
-
-	function myFunction() {
-		var x = document.getElementById("month");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-		}
-	}
-
-
-	function myFunction2() {
-		var x = document.getElementById("day");
-		if (x.style.display === "none") {
-			x.style.display = "block";
-		} else {
-			x.style.display = "none";
-		}
-	}
+	window.addEventListener('date', function(e) {
+		    const videos = document.querySelectorAll("video")
+		
+		    videos.forEach(video => {
+		      video.addEventListener("click", function (){
+		        this.play()
+		      })
+		    })
+		    });
 
 });
+		
+
