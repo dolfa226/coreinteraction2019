@@ -34,12 +34,12 @@ body {
   font-weight: bold;
   position:absolute;
   left: 15px;
-  top: 55%;
+  top: 20%;
   text-align: right;
   /* background-color: red; */
   width: 600px;
   height: 3100px;
-  line-height:3400px;
+  line-height:3200px;
 }
 
 .column2 {
@@ -48,11 +48,11 @@ body {
   font-weight: bold;
   position:absolute;
   right: 5px;
-  top: 700px;
+  top: 1000px;
   text-align: left;
   /* background-color: red; */
   width: 600px;
-  line-height: 790px;
+  line-height: 788px;
 }
 
 #red {
